@@ -47,7 +47,7 @@ export default function Register() {
               placeholder="Juan Pérez"
               required
             />
-          </div>  
+          </div>
           <div className={styles.formGroup}>
             <label htmlFor={emailId} className={styles.label}>
               Email
