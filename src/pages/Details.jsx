@@ -2,12 +2,15 @@ import { useState, useEffect } from "react"
 
 import { ButtonFavorite } from "../components/ButtonFavorite.jsx"
 import { ButtonApply } from "../components/ButtonApply.jsx"
+import { AISummary } from "../components/ButtonSummary.jsx"
 
 import { useParams } from "react-router"
 import { useNavigateHook } from "../hooks/useNavigate.jsx"
+
 import styles from './Details.module.css'
 import { Link } from "../components/Link.jsx"
 import { JobSection } from "../components/JobSection.jsx"
+
 
 
 
@@ -103,6 +106,8 @@ export default function JobDetails() {
         <BreadCrumbDetails />
 
         <HeaderDetails />
+
+        <AISummary jobId={job.id} />
 
         <JobSection title="Descripción del puesto" content={job.content.description} />
         <JobSection title="Responsabilidades" content={job.content.responsibilities} />
