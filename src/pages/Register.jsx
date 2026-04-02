@@ -11,7 +11,7 @@ export default function Register() {
   const { login } = useAuthStore()
   const navigate = useNavigate()
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
 
     const formData = new FormData(e.target)
@@ -19,10 +19,27 @@ export default function Register() {
     const email = formData.get(emailId)
     const password = formData.get(passwordId)
 
-    // Mock register - en una app real, harías una petición a la API
-    if (name && email && password) {
+    try {
+      const response = await fetch (`${import.meta.env.VITE_API_URL}/auth/register`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        credentials: 'include',
+        body: JSON.stringify({ name, email, password })
+      })
+
+      const data = await response.json()
+      
+      if (!response.ok) {
+        throw new Error(data.error || 'Error al registrar usuario')
+      }
+
       login()
-      navigate('/search')
+      navigate('/profile')
+
+    } catch (error) {
+      console.error(error)
     }
   }
 

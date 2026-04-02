@@ -3,7 +3,23 @@ import { useAuthStore } from '../store/AuthStore.js'
 import styles from './Profile.module.css'
 
 export default function Profile() {
-  const { logout } = useAuthStore();
+  const logout = useAuthStore(state => state.logout)
+  const user = useAuthStore(state => state.user)
+
+  const handleLogout = async () => {
+    try {
+        await fetch ( `${import.meta.env.VITE_API_URL}/auth/logout`, {
+        method: 'POST',
+        credentials: 'include'
+      })
+    } catch (error) {
+      console.error('Error al cerrar sesión:', error)
+    } finally {
+      logout()
+    }
+  }
+
+
   return (
     <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '2rem 1rem' }}>
       <div className={styles.container}>
@@ -23,8 +39,8 @@ export default function Profile() {
               />
             </svg>
           </div>
-          <h1 className={styles.name}>Usuario Demo</h1>
-          <p className={styles.email}>usuario@ejemplo.com</p>
+          <h1 className={styles.name}>{user?.name || 'Cargando...'}</h1>
+          <p className={styles.email}>{user?.email}</p>
         </div>
 
         <div className={styles.section}>
@@ -85,7 +101,7 @@ export default function Profile() {
           <button className={styles.editButton}>
             Editar Perfil
           </button>
-          <button className={styles.logoutButton} onClick={logout}>
+          <button className={styles.logoutButton} onClick={handleLogout}>
             Cerrar Sesión
           </button>
         </div>

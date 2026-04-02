@@ -4,23 +4,42 @@ import { useAuthStore } from '../store/AuthStore'
 import styles from './Login.module.css'
 
 export default function Login() {
-  const { login } = useAuthStore()
+  const login = useAuthStore(state => state.login)
+  
+
   const navigate = useNavigate()
   const passwordId = useId()
   const emailId = useId()
 
-  const handleSubmit = (e) => {
-    e.preventDefault()
+  const handleSubmit = async (e) => {
+      e.preventDefault()
 
-    const formData = new FormData(e.target)
-    const email = formData.get(emailId)
-    const password = formData.get(passwordId)
-    
-    // Mock login - en una app real, harías una petición a la API
-    if (email && password) {
-      login()
-      navigate('/search')
-    }
+      const formData = new FormData(e.target)
+      const email = formData.get(emailId)
+      const password = formData.get(passwordId)
+
+      try {
+        const response = await fetch (`${import.meta.env.VITE_API_URL}/auth/login`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          credentials: 'include',
+          body: JSON.stringify({ email, password })
+        })
+
+        const data = await response.json()
+        
+        if (!response.ok) {
+          throw new Error(data.error || 'Error al registrar usuario')
+        }
+
+        login(data.user)
+        navigate('/profile')
+
+      } catch (error) {
+        console.error(error)
+      }
   }
 
   return (

@@ -32,12 +32,11 @@ export function Header() {
   )
 }
 const UserButton = () => {
-  const { isLoggedIn, login, logout } = useAuthStore();
-
+  const isLoggedIn = useAuthStore(state => state.isLoggedIn)
   return (
     isLoggedIn ?
-      <button onClick={logout}>Cerrar Sesión</button> :
-      <button onClick={login}>Iniciar Sesión</button>
+      <Link to="/profile" >Ir al Perfil</Link> :
+      <Link to="/login">Iniciar Sesión</Link>
   )
 }
 

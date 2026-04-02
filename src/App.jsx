@@ -6,6 +6,8 @@ import { Header } from './components/Header.jsx'
 import { Footer } from './components/Footer.jsx'
 import { ProtectedRoute } from './components/ProtectedRoute.jsx'
 
+import { useAuthCheck } from './hooks/useAuthCheck.jsx'
+
 const Home = lazy(() => import('./pages/Home.jsx'))
 const Search = lazy(() => import('./pages/Search.jsx'))
 const NotFound = lazy(() => import('./pages/404.jsx'))
@@ -15,6 +17,8 @@ const Register = lazy(() => import('./pages/Register.jsx'))
 const Login = lazy(() => import('./pages/Login.jsx'))
 
 function App() {
+  useAuthCheck() 
+
   return (
     <>
       <Header />
