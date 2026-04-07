@@ -1,11 +1,11 @@
-import { useId } from 'react'
+import { useId, useState } from 'react'
 import { useNavigate } from 'react-router'
 import { useAuthStore } from '../store/AuthStore'
 import styles from './Login.module.css'
 
 export default function Login() {
   const login = useAuthStore(state => state.login)
-  
+  const [error, setError] = useState(null)
 
   const navigate = useNavigate()
   const passwordId = useId()
@@ -13,6 +13,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
       e.preventDefault()
+      setError(null)
 
       const formData = new FormData(e.target)
       const email = formData.get(emailId)
@@ -31,14 +32,14 @@ export default function Login() {
         const data = await response.json()
         
         if (!response.ok) {
-          throw new Error(data.error || 'Error al registrar usuario')
+          throw new Error(data.error || 'Error al iniciar sesión')
         }
 
         login(data.user)
         navigate('/profile')
 
       } catch (error) {
-        console.error(error)
+        setError(error.message)
       }
   }
 
@@ -82,6 +83,7 @@ export default function Login() {
           <button type="submit" className={styles.submitButton}>
             Iniciar Sesión
           </button>
+          {error && <p className={styles.error}>{error}</p>}
         </form>
 
         <p className={styles.footer}>

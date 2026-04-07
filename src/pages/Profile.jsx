@@ -1,4 +1,5 @@
 import { useAuthStore } from '../store/AuthStore.js'
+import { Link } from '../components/Link.jsx'
 
 import styles from './Profile.module.css'
 
@@ -39,7 +40,7 @@ export default function Profile() {
               />
             </svg>
           </div>
-          <h1 className={styles.name}>{user?.name || 'Cargando...'}</h1>
+          <h1 className={styles.name}>{user?.title}</h1>
           <p className={styles.email}>{user?.email}</p>
         </div>
 
@@ -48,59 +49,57 @@ export default function Profile() {
           <div className={styles.infoGrid}>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Nombre completo</span>
-              <span className={styles.infoValue}>Usuario Demo</span>
+              <span className={styles.infoValue}>{user?.name}</span>
             </div>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Email</span>
-              <span className={styles.infoValue}>usuario@ejemplo.com</span>
+              <span className={styles.infoValue}>{user?.email}</span>
             </div>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Teléfono</span>
-              <span className={styles.infoValue}>+34 123 456 789</span>
+              <span className={styles.infoValue}>{user?.phone}</span>
             </div>
             <div className={styles.infoItem}>
               <span className={styles.infoLabel}>Ubicación</span>
-              <span className={styles.infoValue}>Madrid, España</span>
+              <span className={styles.infoValue}>{user?.location}</span>
             </div>
           </div>
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Experiencia</h2>
-          <div className={styles.experienceItem}>
-            <h3 className={styles.experienceTitle}>Desarrollador Frontend</h3>
-            <p className={styles.experienceCompany}>Empresa XYZ • 2021 - Presente</p>
-            <p className={styles.experienceDescription}>
-              Desarrollo de aplicaciones web con React, TypeScript y Next.js
-            </p>
-          </div>
-          <div className={styles.experienceItem}>
-            <h3 className={styles.experienceTitle}>Desarrollador Junior</h3>
-            <p className={styles.experienceCompany}>Startup ABC • 2019 - 2021</p>
-            <p className={styles.experienceDescription}>
-              Mantenimiento y desarrollo de features en aplicaciones legacy
-            </p>
-          </div>
+          {user?.experience && user.experience.length > 0 ? (
+            user.experience.map((exp, index) => (
+              <div key={index} className={styles.experienceItem}>
+                <h3 className={styles.experienceTitle}>{exp.title}</h3>
+                <p className={styles.experienceCompany}>
+                  {exp.company} • {exp.start_date} - {exp.end_date || 'Presente'}
+                </p>
+                <p className={styles.experienceDescription}>
+                  {exp.responsibilities}
+                </p>
+              </div>
+            ))
+          ) : (
+            <p className={styles.noExperience}>No hay experiencia registrada.</p>
+          )}
         </div>
 
         <div className={styles.section}>
           <h2 className={styles.sectionTitle}>Habilidades</h2>
           <div className={styles.skills}>
-            <span className={styles.skill}>React</span>
-            <span className={styles.skill}>TypeScript</span>
-            <span className={styles.skill}>Node.js</span>
-            <span className={styles.skill}>CSS</span>
-            <span className={styles.skill}>Git</span>
-            <span className={styles.skill}>Next.js</span>
-            <span className={styles.skill}>REST APIs</span>
-            <span className={styles.skill}>SQL</span>
+            {user?.skills?.map((skill, index) => (
+              <span key={index} className={styles.skill}>
+                {skill.trim()}
+              </span>
+            ))}
           </div>
         </div>
 
         <div className={styles.actions}>
-          <button className={styles.editButton}>
+          <Link className={styles.editButton} to="/update-profile">
             Editar Perfil
-          </button>
+          </Link>
           <button className={styles.logoutButton} onClick={handleLogout}>
             Cerrar Sesión
           </button>

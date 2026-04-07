@@ -157,3 +157,11 @@
   color: #ffffff;
   background: rgba(0, 153, 255, 0.1);
 }
+
+.error {
+  color: #ff4d4f;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+}

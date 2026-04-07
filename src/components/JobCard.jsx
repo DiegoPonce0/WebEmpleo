@@ -16,7 +16,7 @@ export function JobCard({ job }) {
         <div>
             <h3><Link className={styles.title} to={`/jobs/${job.id}`}>{job.titulo}</Link></h3>
             <small>{job.empresa} | {job.ubicacion}</small>
-            <p>{job.descripcion}</p>
+            <p className={styles.description}>{job.descripcion}</p>
         </div>
         <div className={styles.actions}>
         <Link to={`/jobs/${job.id}`} className={styles.details}>Ver Detalles</Link>

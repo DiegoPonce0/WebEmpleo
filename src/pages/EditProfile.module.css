@@ -14,7 +14,7 @@
   border-radius: 1.5rem;
   padding: 3rem 2.5rem;
   width: 100%;
-  max-width: 450px;
+  max-width: calc(100vw - 200px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -33,7 +33,7 @@
 
 .title {
   font-size: 2.25rem;
-  font-weight: 800;
+  font-weight: 500;
   color: var(--text-primary, #ffffff);
   margin-bottom: 0.5rem;
   text-align: center;
@@ -63,6 +63,16 @@
   box-shadow: none;
 }
 
+form input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  padding: 0.75rem 0.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
 .label {
   color: var(--text-secondary, rgba(255, 255, 255, 0.7));
   font-size: 0.85rem;
@@ -80,6 +90,7 @@
   color: var(--text-primary, #ffffff);
   font-size: 1rem;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 1;
 }
 
 .input:focus {
@@ -156,12 +167,4 @@
 .link:hover {
   color: #ffffff;
   background: rgba(0, 153, 255, 0.1);
-}
-
-.error {
-  color: #ff4d4f;
-  margin-top: 10px;
-  font-size: 0.9rem;
-  text-align: center;
-  font-style: italic;
 }

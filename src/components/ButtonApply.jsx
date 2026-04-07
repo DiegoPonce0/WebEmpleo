@@ -1,4 +1,5 @@
 import { useState} from 'react'
+import { Link } from 'react-router'
 
 import { useAuthStore } from '../store/AuthStore.js';
 import styles from './ButtonApply.module.css'
@@ -13,6 +14,6 @@ export const ButtonApply = () => {
         return (
             isLoggedIn ?
             <button className={styles.applyButton} onClick={handleApply}>{isApplied ? 'Aplicado' : 'Aplicar ahora'}</button> :
-            <button disabled className={styles.applyButton}>Inicia sesión para aplicar</button>
+            <Link to="/login" className={styles.applyButton}>Aplicar ahora</Link>
         )
     }

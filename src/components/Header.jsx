@@ -35,8 +35,8 @@ const UserButton = () => {
   const isLoggedIn = useAuthStore(state => state.isLoggedIn)
   return (
     isLoggedIn ?
-      <Link to="/profile" >Ir al Perfil</Link> :
-      <Link to="/login">Iniciar Sesión</Link>
+      <Link className="loggin-button" to="/profile" >Ir al Perfil</Link> :
+      <Link className="loggin-button" to="/login">Iniciar Sesión</Link>
   )
 }
 

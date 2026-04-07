@@ -8,11 +8,13 @@ import { ProtectedRoute } from './components/ProtectedRoute.jsx'
 
 import { useAuthCheck } from './hooks/useAuthCheck.jsx'
 
+
 const Home = lazy(() => import('./pages/Home.jsx'))
 const Search = lazy(() => import('./pages/Search.jsx'))
 const NotFound = lazy(() => import('./pages/404.jsx'))
 const JobDetails = lazy(() => import('./pages/Details.jsx'))
 const Profile = lazy(() => import('./pages/Profile.jsx'))
+const UpdateProfile = lazy(() => import('./pages/EditProfile.jsx'))
 const Register = lazy(() => import('./pages/Register.jsx'))
 const Login = lazy(() => import('./pages/Login.jsx'))
 
@@ -30,6 +32,11 @@ function App() {
         <Route path="/profile" element={
           <ProtectedRoute redirectTo="/login">
             <Profile />
+          </ProtectedRoute>
+          } />
+        <Route path="/update-profile" element={
+          <ProtectedRoute redirectTo="/login">
+            <UpdateProfile />
           </ProtectedRoute>
           } />
         <Route path="/register" element={<Register />} />

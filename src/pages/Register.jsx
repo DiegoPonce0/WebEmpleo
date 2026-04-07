@@ -1,4 +1,4 @@
-import { useId } from 'react'
+import { useId, useState } from 'react'
 import { useNavigate } from 'react-router'
 import styles from './Register.module.css'
 import { useAuthStore } from '../store/AuthStore'
@@ -7,12 +7,15 @@ export default function Register() {
   const nameId = useId()
   const emailId = useId()
   const passwordId = useId()
+  const [error, setError] = useState(null)
 
-  const { login } = useAuthStore()
+  const login = useAuthStore(state => state.login)
+  
   const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setError(null)
 
     const formData = new FormData(e.target)
     const name = formData.get(nameId)
@@ -32,14 +35,18 @@ export default function Register() {
       const data = await response.json()
       
       if (!response.ok) {
-        throw new Error(data.error || 'Error al registrar usuario')
+        const firstError = data.details?.[0]?.message || data.error
+
+        setError(firstError)
+        return
       }
 
-      login()
+      login(data.user)
       navigate('/profile')
 
     } catch (error) {
-      console.error(error)
+      
+      setError(error || 'Error al registrar usuario')
     }
   }
 
@@ -96,6 +103,7 @@ export default function Register() {
           <button type="submit" className={styles.submitButton}>
             Crear Cuenta
           </button>
+          {error && <p className={styles.error}>{error}</p>}
         </form>
 
         <p className={styles.footer}>

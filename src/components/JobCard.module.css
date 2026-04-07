@@ -12,6 +12,7 @@
   flex-direction: column;
   gap: 0.5rem;
   text-align: center;
+  
 }
 
 .details {
@@ -24,5 +25,16 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 600px) {
+  .actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .description {
+    display: none;
   }
 }
