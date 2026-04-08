@@ -9,9 +9,9 @@ export default function Home() {
         <main>
             <section>
                 <img src="./background.webp" width="200" />
-                <h2>Encuentra el trabajo de tus sueños</h2>
-                <p>Unete a la comunidad mas grande de desarrolladores y encuentra tu proxima oportunidad.</p>
-                <form onSubmit={handleSubmit}>
+                <h2>Find Your Dream Job</h2>
+                <p>Join the largest community of developers and find your next opportunity.</p>
+                <form onSubmit={handleSubmit} className="search-form">
                     <div>
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"
@@ -25,24 +25,24 @@ export default function Home() {
                             name="search"
                             required
                             type="text"
-                            placeholder="Buscar empleos por título, habilidad o empresa"
+                            placeholder="Search jobs by title, skill, or company"
                         />
 
-                        <button type="submit">Buscar</button>
+                        <button type="submit" className="homeSearchBtn">Search</button>
                     </div>
                 </form>
             </section>
             <section>
                 <header>
-                    <h2>¿Por qué DevJobs?</h2>
-                    <p>DevJobs es la principal plataforma de búsqueda de empleo para desarrolladores. Conectamos a los mejores
-                        talentos con las empresas más innovadoras.</p>
+                    <h2>Why DevJobs?</h2>
+                    <p>DevJobs is the leading job search platform for developers. We connect top talent with the most innovative companies.</p>
                 </header>
 
                 <footer>
                     <InfoCard
-                        title="Encuentra el trabajo ideal para ti"
-                        description="Con nuestra amplia base de datos de empleos, puedes encontrar el trabajo que se adapte a tus habilidades y preferencias.">
+                        title="Find Your Ideal Job"
+
+                        description="With our extensive job database, you can find the job that fits your skills and preferences.">
                         <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32"
                             aria-hidden="true">
                             <path
@@ -51,8 +51,8 @@ export default function Home() {
                         </svg>
                     </InfoCard>
                     <InfoCard
-                        title="Conecta con empleadores"
-                        description="Nuestra plataforma te permite conectarte directamente con empleadores y reclutadores, facilitando el proceso de aplicacion y contratacion.">
+                        title="Connect with employers"
+                        description="Our platform allows you to connect directly with employers and recruiters, making the application and hiring process easier.">
                         <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32"
                             aria-hidden="true">
                             <path
@@ -61,8 +61,8 @@ export default function Home() {
                         </svg>
                     </InfoCard>
                     <InfoCard
-                        title="Recursos para el desarrollo profesional"
-                        description="Ofrecemos una variedad de recursos, incluyendo articulos, tutoriales y webinars, para ayudarte a mejorar tus habilidades y avanzar en tu carrera.">
+                        title="Professional Development Resources"
+                        description="We offer a variety of resources, including articles, tutorials, and webinars, to help you improve your skills and advance your career.">
                         <svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32"
                             aria-hidden="true">
                             <path

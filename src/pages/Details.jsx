@@ -29,7 +29,7 @@ export default function JobDetails() {
                 setLoading (true)
                 const response = await fetch (`${import.meta.env.VITE_API_URL}/jobs/${id}`)
                 if (!response.ok) {
-                    throw new Error ('Error al obtener los detalles del empleo')
+                    throw new Error ('Error fetching job details')
                 }
                 const data = await response.json()
                 setJob(data)
@@ -46,7 +46,7 @@ export default function JobDetails() {
     if (loading) {
         return (<div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
             <div className={styles.loading}>
-                <p className={styles.loadingText}>Cargando...</p>
+                <p className={styles.loadingText}>Loading...</p>
             </div>
         </div>)
     }
@@ -54,13 +54,13 @@ export default function JobDetails() {
         return (<div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
         <div className={styles.error}>
           <h2 className={styles.errorTitle}>
-            Oferta no encontrada
+            Job not found
           </h2>
           <button
             onClick={() => navigate('/')}
             className={styles.errorButton}
           >
-            Volver al inicio
+            Return to home
           </button>
         </div>
       </div>)
@@ -74,7 +74,7 @@ export default function JobDetails() {
                     href="/search"
                     className={styles.breadcrumbButton}
                     >
-                    Empleos
+                    Jobs
                     </Link>
                     <span className={styles.breadcrumbSeparator}>/</span>
                     <span className={styles.breadcrumbCurrent}>{job.titulo}</span>
@@ -94,28 +94,32 @@ export default function JobDetails() {
                 <p className={styles.meta}>
                 {job.empresa} · {job.ubicacion}
                 </p>
+                <div className={styles.actionsHeader}>
                 <ButtonApply />
                 <ButtonFavorite jobId={job.id} />
+                </div>
             </header>
         )
     }
 
     return (
-        <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
+        <main style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 1rem' }}>
         
-        <BreadCrumbDetails />
+            <BreadCrumbDetails />
 
-        <HeaderDetails />
+            <HeaderDetails />
 
-        <AISummary jobId={job.id} />
+            <AISummary jobId={job.id} className={styles.aiSummary} />
 
-        <JobSection title="Descripción del puesto" content={job.content.description} />
-        <JobSection title="Responsabilidades" content={job.content.responsibilities} />
-        <JobSection title="Requisitios" content={job.content.requirements} />
-        <JobSection title="Acerca de la empresa" content={job.content.about} />
+            <JobSection title="Description" content={job.content.description} />
+            <JobSection title="Responsibilities" content={job.content.responsibilities} />
+            <JobSection title="Requirements" content={job.content.requirements} />
+            <JobSection title="About the Company" content={job.content.about} />
 
-        <ButtonApply />
-        <ButtonFavorite jobId={job.id} />
-        </div>
+            <div className={styles.actions}>
+                <ButtonApply />
+                <ButtonFavorite jobId={job.id} />
+            </div>
+        </main>
     )
 }

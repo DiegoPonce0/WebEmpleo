@@ -11,8 +11,8 @@ export default function Search() {
   return (
     <main>
         <SearchBar initialText={newText} onSearch={handleSearch} onTextChange={handleTextChange} />
-        <h2 style={{textAlign: "center"}}>Resultado de busqueda</h2>
-            {loading ? <p>Cargando empleos...</p> : <JobListings jobs={jobs} currentPage={currentPage} />}
+        <h2 style={{textAlign: "center", paddingTop: "0.35rem"}}>Search Results</h2>
+            {loading ? <p>Loading jobs...</p> : <JobListings jobs={jobs} currentPage={currentPage} />}
             <Pagination currentPage={currentPage} totalPages={totalPages} onPageChange={handlePageChange} />
     </main>
   )

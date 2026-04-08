@@ -19,7 +19,7 @@ export function JobCard({ job }) {
             <p className={styles.description}>{job.descripcion}</p>
         </div>
         <div className={styles.actions}>
-        <Link to={`/jobs/${job.id}`} className={styles.details}>Ver Detalles</Link>
+        <Link to={`/jobs/${job.id}`} className={styles.details}>View Job</Link>
         <ButtonApply />
         <ButtonFavorite jobId={job.id} />
         </div>        

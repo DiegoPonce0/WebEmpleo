@@ -111,10 +111,30 @@
   background: #666;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 600px) {
   .applyButton {
     width: auto;
   }
+
+  .header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  }
+
+  .actionsHeader {
+    display: none;
+  }
+
+  .container {
+  padding: 2rem 2rem 0.1rem 2rem;
+  padding-inline: 1.5rem;
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
 }
 
 .section {
@@ -131,4 +151,11 @@
 .sectionContent {
   color: var(--text-secondary);
   line-height: 1.6;
+}
+
+.actions {
+  margin-bottom: auto;
+  padding-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
 }

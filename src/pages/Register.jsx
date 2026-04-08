@@ -46,29 +46,29 @@ export default function Register() {
 
     } catch (error) {
       
-      setError(error || 'Error al registrar usuario')
+      setError(error || 'Error trying to register')
     }
   }
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={styles.card}>
-        <h1 className={styles.title}>Crear Cuenta</h1>
+        <h1 className={styles.title}>Create Account</h1>
         <p className={styles.subtitle}>
-          Regístrate para aplicar a ofertas de trabajo
+          Register to apply for job opportunities
         </p>
 
         <form onSubmit={handleSubmit} className={styles.form}>
           <div className={styles.formGroup}>
             <label htmlFor="name" className={styles.label}>
-              Nombre completo
+              Full Name
             </label>
             <input
               id={nameId}
               name={nameId}
               type="text"
               className={styles.input}
-              placeholder="Juan Pérez"
+              placeholder="John Doe"
               required
             />
           </div>
@@ -81,14 +81,14 @@ export default function Register() {
               name={emailId}
               type="email"
               className={styles.input}
-              placeholder="tu@email.com"
+              placeholder="your@email.com"
               required
             />
           </div>
 
           <div className={styles.formGroup}>
             <label htmlFor="password" className={styles.label}>
-              Contraseña
+              Password
             </label>
             <input
               id={passwordId}
@@ -101,18 +101,18 @@ export default function Register() {
           </div>
 
           <button type="submit" className={styles.submitButton}>
-            Crear Cuenta
+            Create Account
           </button>
           {error && <p className={styles.error}>{error}</p>}
         </form>
 
         <p className={styles.footer}>
-          ¿Ya tienes cuenta?{' '}
+          Already have an account?{' '}
           <a href="/login" className={styles.link}>
-            Inicia sesión aquí
+            Login here
           </a>
         </p>
       </div>
-    </div>
+    </main>
   )
 }

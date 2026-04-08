@@ -13,7 +13,7 @@ export const ButtonApply = () => {
         }
         return (
             isLoggedIn ?
-            <button className={styles.applyButton} onClick={handleApply}>{isApplied ? 'Aplicado' : 'Aplicar ahora'}</button> :
-            <Link to="/login" className={styles.applyButton}>Aplicar ahora</Link>
+            <button className={styles.applyButton} onClick={handleApply}>{isApplied ? 'Applied' : 'Apply Now'}</button> :
+            <Link to="/login" className={styles.applyButton}>Apply Now</Link>
         )
     }

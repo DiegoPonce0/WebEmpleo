@@ -15,9 +15,9 @@ export function SearchBar({ onSearch, onTextChange, initialText }) {
 
   return (
     <section className="jobs-search">
-      <h1 style={{ textAlign: "center" }}>Encuentra tu proximo trabajo</h1>
-      <p style={{ textAlign: "center" }}>Explora miles de oportunidades en el sector tecnologico</p>
-      <form id="empleos-search-form" role="search" onSubmit={handleSubmit}>
+      <h1 style={{ textAlign: "center" }}>Find Your Next Job</h1>
+      <p style={{ textAlign: "center" }}>Explore thousands of opportunities in the tech industry</p>
+      <form id="empleos-search-form" role="search" onSubmit={handleSubmit} >
 
         <div className="search-bar">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -30,17 +30,17 @@ export function SearchBar({ onSearch, onTextChange, initialText }) {
 
           <input
             type="text"
-            placeholder="Buscar empleos por título, habilidad o empresa"
+            placeholder="Search jobs by title, skill, or company"
             name={idText}
             onChange={handleInputChange}
             defaultValue={initialText}
           />
-          <button type="submit">Buscar</button>
+          <button type="submit">Search</button>
         </div>
 
         <div className="search-filters">
           <select name={idTechnology} id="filter-technology" onChange={handleSubmit}>
-            <option value="">Tecnología</option>
+            <option value="">Technology</option>
             <option value="javascript">JavaScript</option>
             <option value="python">Python</option>
             <option value="react">React</option>
@@ -57,16 +57,16 @@ export function SearchBar({ onSearch, onTextChange, initialText }) {
           </select>
 
           <select name={idLocation} id="filter-location" onChange={handleSubmit}>
-            <option value="">Ubicación</option>
-            <option value="remoto">Remoto</option>
-            <option value="cdmx">Ciudad de México</option>
+            <option value="">Location</option>
+            <option value="remoto">Remote</option>
+            <option value="cdmx">Mexico City</option>
             <option value="guadalajara">Guadalajara</option>
             <option value="monterrey">Monterrey</option>
             <option value="barcelona">Barcelona</option>
           </select>
 
           <select name={idExperienceLevel} id="filter-experience-level" onChange={handleSubmit}>
-            <option value="">Nivel de experiencia</option>
+            <option value="">Experience Level</option>
             <option value="junior">Junior</option>
             <option value="mid">Mid-level</option>
             <option value="senior">Senior</option>

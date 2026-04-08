@@ -9,7 +9,7 @@ export default function Profile() {
 
   const handleLogout = async () => {
     try {
-        await fetch ( `${import.meta.env.VITE_API_URL}/auth/logout`, {
+      await fetch(`${import.meta.env.VITE_API_URL}/auth/logout`, {
         method: 'POST',
         credentials: 'include'
       })
@@ -22,20 +22,20 @@ export default function Profile() {
 
 
   return (
-    <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '2rem 1rem' }}>
+    <main>
       <div className={styles.container}>
         <div className={styles.header}>
           <div className={styles.avatar}>
-            <svg 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2" 
-              viewBox="0 0 24 24" 
+            <svg
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <path 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
               />
             </svg>
@@ -73,7 +73,7 @@ export default function Profile() {
               <div key={index} className={styles.experienceItem}>
                 <h3 className={styles.experienceTitle}>{exp.title}</h3>
                 <p className={styles.experienceCompany}>
-                  {exp.company} • {exp.start_date} - {exp.end_date || 'Presente'}
+                  {exp.company} • {new Date(exp.start_date).toLocaleDateString()} - {new Date(exp.end_date).toLocaleDateString() || 'Presente'}
                 </p>
                 <p className={styles.experienceDescription}>
                   {exp.responsibilities}
@@ -105,6 +105,6 @@ export default function Profile() {
           </button>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

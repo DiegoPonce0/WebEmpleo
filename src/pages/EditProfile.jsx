@@ -56,7 +56,7 @@ export default function UpdateProfile() {
   }
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={styles.card}>
         <h1 className={styles.title}>Editar informacion del perfil</h1>
         <p className={styles.subtitle}>
@@ -138,6 +138,6 @@ export default function UpdateProfile() {
           </button>
         </form>
       </div>
-    </div>
+    </main>
   )
 }

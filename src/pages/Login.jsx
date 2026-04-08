@@ -32,7 +32,7 @@ export default function Login() {
         const data = await response.json()
         
         if (!response.ok) {
-          throw new Error(data.error || 'Error al iniciar sesión')
+          throw new Error(data.error || 'Error trying to login')
         }
 
         login(data.user)
@@ -44,11 +44,11 @@ export default function Login() {
   }
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={styles.card}>
-        <h1 className={styles.title}>Iniciar Sesión</h1>
+        <h1 className={styles.title}>Login</h1>
         <p className={styles.subtitle}>
-          Accede a tu cuenta para aplicar a ofertas
+          Access your account to apply for opportunities
         </p>
 
         <form onSubmit={handleSubmit} className={styles.form}>
@@ -61,14 +61,14 @@ export default function Login() {
               type="email"
               name={emailId}
               className={styles.input}
-              placeholder="tu@email.com"
+              placeholder="your@email.com"
               required
             />
           </div>
 
           <div className={styles.formGroup}>
             <label htmlFor={passwordId} className={styles.label}>
-              Contraseña
+              Password
             </label>
             <input
               id={passwordId}
@@ -81,18 +81,18 @@ export default function Login() {
           </div>
 
           <button type="submit" className={styles.submitButton}>
-            Iniciar Sesión
+            Login
           </button>
           {error && <p className={styles.error}>{error}</p>}
         </form>
 
         <p className={styles.footer}>
-          ¿No tienes cuenta?{' '}
+          Don't have an account?{' '}
           <a href="/register" className={styles.link}>
-            Regístrate aquí
+            Register here
           </a>
         </p>
       </div>
-    </div>
+    </main>
   )
 }

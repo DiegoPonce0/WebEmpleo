@@ -20,7 +20,7 @@ export function Header() {
       </Link>
 
       <nav className="nav">
-        <NavLink className={({ isActive }) => isActive ? "nav-link-active" : ""} to="/search">Empleos</NavLink>
+        <NavLink className={({ isActive }) => isActive ? "nav-link-active" : ""} to="/search">Jobs</NavLink>
       </nav>
 
       <FavoriteCount />
@@ -35,8 +35,8 @@ const UserButton = () => {
   const isLoggedIn = useAuthStore(state => state.isLoggedIn)
   return (
     isLoggedIn ?
-      <Link className="loggin-button" to="/profile" >Ir al Perfil</Link> :
-      <Link className="loggin-button" to="/login">Iniciar Sesión</Link>
+      <Link className="loggin-button" to="/profile" >Go to Profile</Link> :
+      <Link className="loggin-button" to="/login">Login</Link>
   )
 }
 
@@ -46,7 +46,7 @@ const FavoriteCount = () => {
 
   return (isLoggedIn &&
     <Link to="/profile" className="profile-link" >
-      Empleos guardados: {countFavorites()}
+      Jobs saved: {countFavorites()}
     </Link>
   );
 }

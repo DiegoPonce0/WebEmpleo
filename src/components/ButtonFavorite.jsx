@@ -7,7 +7,7 @@ export function ButtonFavorite({jobId}) {
     return (
         isLoggedIn ?
             <button onClick={() => toggleFavorite(jobId)}>
-                {isFavorite(jobId) ? 'Eliminar de favoritos' : 'Agregar a favoritos'}
+                {isFavorite(jobId) ? 'Remove from favorites' : 'Add to favorites'}
             </button> :
             null
         );
