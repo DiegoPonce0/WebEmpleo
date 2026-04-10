@@ -97,7 +97,7 @@ export default function Profile() {
         </div>
 
         <div className={styles.actions}>
-          <Link className={styles.editButton} to="/update-profile">
+          <Link className={styles.editButton} to="/profile/edit">
             Editar Perfil
           </Link>
           <button className={styles.logoutButton} onClick={handleLogout}>
