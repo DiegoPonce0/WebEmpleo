@@ -59,10 +59,10 @@ export function SearchBar({ onSearch, onTextChange, initialText }) {
           <select name={idLocation} id="filter-location" onChange={handleSubmit}>
             <option value="">Location</option>
             <option value="remoto">Remote</option>
-            <option value="cdmx">Mexico City</option>
-            <option value="guadalajara">Guadalajara</option>
-            <option value="monterrey">Monterrey</option>
-            <option value="barcelona">Barcelona</option>
+            <option value="vancouver">Vancouver</option>
+            <option value="toronto">Toronto</option>
+            <option value="calgary">Calgary</option>
+            <option value="alberta">Alberta</option>
           </select>
 
           <select name={idExperienceLevel} id="filter-experience-level" onChange={handleSubmit}>

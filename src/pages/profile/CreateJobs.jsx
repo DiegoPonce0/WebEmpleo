@@ -1,5 +1,4 @@
 import { useId } from 'react'
-
 import styles from './CreateJobs.module.css'
 
 export default function CreateJobs() {
@@ -8,11 +7,62 @@ export default function CreateJobs() {
   const companyId = useId()
   const locationId = useId()
   const descriptionId = useId()
-  const dataId = useId()
-  const contentId = useId()
+  const technologyId = useId()
+  const modalityId = useId()
+  const levelId = useId()
+  const responsibilitiesId = useId()
+  const requirementsId = useId()
+  const aboutId = useId()
+
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    const formData = new FormData(e.target)
+    const title = formData.get(titleId)
+    const company = formData.get(companyId)
+    const location = formData.get(locationId)
+    const description = formData.get(descriptionId)
+
+    const data = {
+      technology: formData.get(technologyId)?.split(',').map(t => t.trim()),
+      modality: formData.get(modalityId),
+      level: formData.get(levelId)
+    }
+
+    const content = {
+      responsibilities: formData.get(responsibilitiesId),
+      requirements: formData.get(requirementsId),
+      about: formData.get(aboutId)
+    }
+
+    const jobData = {
+      title,
+      company,
+      location,
+      description,
+      data,
+      content
+    }
+
+    try {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/jobs`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(jobData)
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to create job')
+      }
+
+      const result = await response.json()
+      console.log('Job created successfully:', result)
+      
+    } catch (error){
+      console.error('Error creating job:', error)
+    }
   }
 
   return (
@@ -30,8 +80,8 @@ export default function CreateJobs() {
             </label>
             <input
               id={titleId}
-              type="text"
               name={titleId}
+              type="text"
               className={styles.input}
               placeholder="Job title"
             />
@@ -76,27 +126,83 @@ export default function CreateJobs() {
           </div>
 
           <div className={styles.formGroup}>
-            <label htmlFor={dataId} className={styles.label}>
-              Job Data
+            <label htmlFor={technologyId} className={styles.label}>
+              Technology
             </label>
             <input
-              id={dataId}
-              name={dataId}
+              id={technologyId}
+              name={technologyId}
               type="text"
               className={styles.input}
-              placeholder="Job data"
+              placeholder="node, react, etc"
             />
           </div>
 
           <div className={styles.formGroup}>
-            <label htmlFor={contentId} className={styles.label}>
-              Job Content
+            <label htmlFor={modalityId} className={styles.label}>
+              Modality
             </label>
-            <textarea
-              id={contentId}
-              name={contentId}
-              className={styles.input}
-              placeholder="Job content"
+            <select 
+            id={modalityId} 
+            name={modalityId} 
+            className={styles.input}
+            >
+              <option value="">Select modalidad</option>
+              <option value="remote">Remote</option>
+              <option value="in person">In Person</option>
+              <option value="hybrid">Hybrid</option>
+            </select>
+          </div>
+
+          <div className={styles.formGroup}>
+            <label htmlFor={levelId} className={styles.label}>
+              Level
+            </label>
+            <select 
+            id={levelId} 
+            name={levelId} 
+            className={styles.input}
+            >
+              <option value="">Select Level</option>
+              <option value="junior">Junior</option>
+              <option value="mid">Mid</option>
+              <option value="senior">Senior</option>
+            </select>
+          </div>
+
+          <div className={styles.formGroup}>
+            <label htmlFor={responsibilitiesId} className={styles.label}>
+              Responsibilities
+            </label>
+            <input 
+            id={responsibilitiesId} 
+            name={responsibilitiesId} 
+            type="text"
+            className={styles.input}
+            />
+          </div>
+
+          <div className={styles.formGroup}>
+            <label htmlFor={requirementsId} className={styles.label}>
+              Requirements
+            </label>
+            <input 
+            id={requirementsId} 
+            name={requirementsId} 
+            type="text"
+            className={styles.input}
+            />
+          </div>
+
+          <div className={styles.formGroup}>
+            <label htmlFor={aboutId} className={styles.label}>
+              About
+            </label>
+            <input 
+            id={aboutId} 
+            name={aboutId} 
+            type="text"
+            className={styles.input}
             />
           </div>
 

@@ -3,19 +3,27 @@
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .card {
   background: linear-gradient(145deg, rgba(25, 25, 35, 0.9) 0%, rgba(20, 20, 25, 0.95) 100%);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 1.5rem;
   padding: 3rem 2.5rem;
   width: 100%;
-  max-width: calc(100vw - 200px);
+  max-width: 800px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+  }
 }
 
 @keyframes slideUp {
@@ -51,6 +59,13 @@
   display: flex;
   flex-direction: column;
   gap: 1.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 2.5rem;
+}
+
+.form:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .formGroup {
@@ -104,17 +119,14 @@ form input[type="text"] {
 }
 
 .submitButton {
-  background: linear-gradient(135deg, #09f 0%, #0077ff 100%);
+  background: #09f;
   color: white;
   border: none;
-  font-weight: 700;
   padding: 1rem;
   border-radius: 0.75rem;
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 153, 255, 0.3);
   position: relative;
   overflow: hidden;
 }
@@ -126,14 +138,12 @@ form input[type="text"] {
   left: -100%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
-  transform: skewX(-20deg);
   transition: all 0.5s ease;
 }
 
 .submitButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 153, 255, 0.4);
+  box-shadow: 0 5px 15px rgba(0, 153, 255, 0.4);
   filter: brightness(1.1);
 }
 
@@ -144,6 +154,31 @@ form input[type="text"] {
 .submitButton:active {
   transform: translateY(1px);
   box-shadow: 0 2px 10px rgba(0, 153, 255, 0.3);
+}
+
+.deleteButton {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.deleteButton:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(239, 68, 68, 0.4);
+  filter: brightness(1);
+}
+
+.deleteButton:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 10px rgba(239, 68, 68, 0.3);
 }
 
 .footer {
@@ -166,4 +201,25 @@ form input[type="text"] {
 .link:hover {
   color: #ffffff;
   background: rgba(0, 153, 255, 0.1);
+}
+
+.actionGroup {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.actionGroup button {
+  flex: 1;
+  margin-top: 0;
+}
+
+@media (max-width: 480px) {
+  .actionGroup {
+    flex-direction: column;
+  }
+  
+  .actionGroup button {
+    width: 100%;
+  }
 }

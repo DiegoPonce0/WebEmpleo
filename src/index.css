@@ -228,7 +228,6 @@ button {
   &:hover,
   &:focus {
     background-color: var(--primary-hover);
-    outline: 2px solid white;
     outline-offset: 2px;
   }
 

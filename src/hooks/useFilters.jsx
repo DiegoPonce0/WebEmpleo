@@ -7,7 +7,7 @@ export function useFilters() {
   const [filters, setFilters] = useState (() => {
     return {
       technology: searchParams.get ('technology') || '',
-      location: searchParams.get ('type') || '',
+      location: searchParams.get ('location') || '',
       experienceLevel: searchParams.get ('level') || ''
     }
   })
@@ -36,7 +36,7 @@ export function useFilters() {
         const params = new URLSearchParams()
         if (newText) params.append ('text', newText)
         if (filters.technology) params.append ('technology', filters.technology)
-        if (filters.location) params.append ('type', filters.location)
+        if (filters.location) params.append ('location', filters.location)
         if (filters.experienceLevel) params.append ('level', filters.experienceLevel)
 
         const offset = (currentPage -1) * RESULTS_PER_PAGE
@@ -63,7 +63,7 @@ export function useFilters() {
     setSearchParams ((params) => {
     if (newText) params.set('text', newText)
     if (filters.technology) params.set('technology', filters.technology)
-    if (filters.location) params.set('type', filters.location)
+    if (filters.location) params.set('location', filters.location)
     if (filters.experienceLevel) params.set('level', filters.experienceLevel)
 
     if (currentPage > 1) params.set('page', currentPage)
