@@ -16,7 +16,7 @@ const NotFound = lazy(() => import('./pages/404.jsx'))
 const JobDetails = lazy(() => import('./pages/Details.jsx'))
 
 const Profile = lazy(() => import('./pages/Profile.jsx'))
-const UpdateProfile = lazy(() => import('./pages/EditProfile.jsx'))
+const UpdateProfile = lazy(() => import('./pages/profile/EditProfile.jsx'))
 const FavoriteJobs = lazy(() => import('./pages/profile/FavoriteJobs.jsx'))
 const AppliedJobs = lazy(() => import('./pages/profile/AppliedJobs.jsx'))
 const CreateJobs = lazy(() => import('./pages/profile/CreateJobs.jsx'))
