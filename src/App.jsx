@@ -4,6 +4,7 @@ import { lazy, Suspense } from 'react'
 
 
 import { ProtectedRoute } from './components/ProtectedRoute.jsx'
+import { RoleRoute } from './components/RoleRoute.jsx'
 import { ProfileLayout } from './layouts/ProfileLayout.jsx'
 import { MainLayout } from './layouts/MainLayout.jsx'
 
@@ -52,8 +53,8 @@ function App() {
             <Route path="edit" element={<UpdateProfile />} />
             <Route path="favorites" element={<FavoriteJobs />} />
             <Route path="applied" element={<AppliedJobs />} />
-            <Route path="create" element={<CreateJobs />} />
-            <Route path="candidates" element={<ViewCandidates />} />
+            <Route path="create" element={<RoleRoute allow={['employer', 'admin']}> <CreateJobs /> </RoleRoute>} />
+            <Route path="candidates" element={<RoleRoute allow={['employer', 'admin']}> <ViewCandidates /> </RoleRoute> } />
           </Route>
             
           <Route path="*" element={<NotFound />} />

@@ -115,7 +115,6 @@
 .activeLink {
   background: var(--link-active-bg);
   color: var(--link-active-color);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .icon {
@@ -162,7 +161,6 @@
 .logoutBtn:hover {
   background: #ef4444;
   color: white;
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.25);
 }
 
 .collapsed .logoutBtn {

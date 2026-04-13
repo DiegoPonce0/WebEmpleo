@@ -149,7 +149,7 @@ export default function CreateJobs() {
             >
               <option value="">Select modalidad</option>
               <option value="remote">Remote</option>
-              <option value="in person">In Person</option>
+              <option value="on site">On site</option>
               <option value="hybrid">Hybrid</option>
             </select>
           </div>

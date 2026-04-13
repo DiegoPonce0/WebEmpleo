@@ -77,7 +77,7 @@ export default function JobDetails() {
                     Jobs
                     </Link>
                     <span className={styles.breadcrumbSeparator}>/</span>
-                    <span className={styles.breadcrumbCurrent}>{job.titulo}</span>
+                    <span className={styles.breadcrumbCurrent}>{job.title}</span>
                 </nav>
             </div>
         )
@@ -89,10 +89,10 @@ export default function JobDetails() {
         return (
             <header className={styles.header}>
                 <h1 className={styles.title}>
-                {job.titulo}
+                {job.title}
                 </h1>
                 <p className={styles.meta}>
-                {job.empresa} · {job.ubicacion}
+                {job.company} · {job.location}
                 </p>
                 <div className={styles.actionsHeader}>
                 <ButtonApply />

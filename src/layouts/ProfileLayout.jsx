@@ -15,6 +15,7 @@ export function ProfileLayout() {
   }
 
   const logout = useAuthStore(state => state.logout)
+  const user = useAuthStore(state => state.user )
 
 
   const handleLogout = async () => {
@@ -101,27 +102,31 @@ export function ProfileLayout() {
             <span className={styles.linkText}>Job Applications</span>
           </NavLink>
 
-          <NavLink
-            to="/profile/create"
-            className={({ isActive }) =>
-              isActive ? styles.activeLink : styles.link
-            }
-            onClick={() => window.innerWidth < 768 && setIsSidebarOpen(false)}
-          >
-            <svg className={styles.icon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
-            <span className={styles.linkText}>Create Job</span>
-          </NavLink>
+          {['employer', 'admin'].includes(user?.role) && (
+            <>
+              <NavLink
+                to="/profile/create"
+                className={({ isActive }) =>
+                  isActive ? styles.activeLink : styles.link
+                }
+                onClick={() => window.innerWidth < 768 && setIsSidebarOpen(false)}
+              >
+                <svg className={styles.icon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                <span className={styles.linkText}>Create Job</span>
+              </NavLink>
 
-          <NavLink
-            to="/profile/candidates"
-            className={({ isActive }) =>
-              isActive ? styles.activeLink : styles.link
-            }
-            onClick={() => window.innerWidth < 768 && setIsSidebarOpen(false)}
-          >
-            <svg className={styles.icon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-            <span className={styles.linkText}>Candidates</span>
-          </NavLink>
+              <NavLink
+                to="/profile/candidates"
+                className={({ isActive }) =>
+                  isActive ? styles.activeLink : styles.link
+                }
+                onClick={() => window.innerWidth < 768 && setIsSidebarOpen(false)}
+              >
+                <svg className={styles.icon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                <span className={styles.linkText}>Candidates</span>
+              </NavLink>
+            </>
+          )}
 
           <button className={styles.logoutBtn} onClick={handleLogout}>
             <svg className={styles.icon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
