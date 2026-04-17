@@ -41,12 +41,13 @@ const UserButton = () => {
 }
 
 const FavoriteCount = () => {
-  const { countFavorites } = useFavoriteStore();
-  const { isLoggedIn } = useAuthStore();
+  const countFavorites = useFavoriteStore(state => state.favorites.length)
+  const isLoading = useAuthStore(state => state.isLoading)
+  const isLoggedIn = useAuthStore(state => state.isLoggedIn)
 
   return (isLoggedIn &&
-    <Link to="/profile" className="profile-link" >
-      Jobs saved: {countFavorites()}
+    <Link to="/profile/favorites" className="profile-link" >
+      {!isLoading && `Jobs saved: ${countFavorites}`}
     </Link>
   );
 }

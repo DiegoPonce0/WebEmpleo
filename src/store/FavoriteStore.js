@@ -1,7 +1,26 @@
 import { create } from 'zustand';
 
-export const useFavoriteStore = create((set, get) => ({
+export const useFavoriteStore = create((set) => ({
     favorites: [],
+
+    setFavorites: (favorites) => set({ favorites }),
+    
+    fetchFavorites: async () => {
+        try {
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/favorites`, {
+                credentials: 'include'
+            });
+            if (!response.ok) throw new Error('Failed to fetch favorites');
+            const data = await response.json();
+            const ids = data.data.map(job => job.id);
+            set({ favorites: ids });
+        } catch (error) {
+            console.error('Error fetching favorites:', error);
+            set({ favorites: [] });
+        }
+    },
+    
+    resetFavorites: () => set({ favorites: [] }),
 
     addFavorite: (jobId) => set((state) => ({ 
         favorites: state.favorites.includes(jobId) 
@@ -12,17 +31,4 @@ export const useFavoriteStore = create((set, get) => ({
     removeFavorite: (jobId) => set((state) => ({
         favorites: state.favorites.filter((id) => id !== jobId)
     })),
-    
-    isFavorite: (jobId) => {
-        return get().favorites.includes(jobId);
-    },
-
-    toggleFavorite: (jobId) => {
-        const { isFavorite, addFavorite, removeFavorite } = get();
-        isFavorite(jobId) ? removeFavorite(jobId) : addFavorite(jobId);
-    },
-
-    countFavorites: () => {
-        return get().favorites.length;
-    }
 }));

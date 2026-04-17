@@ -40,8 +40,8 @@ export function CreateNewExperience() {
 
       setShowNewForm(false) 
 
-    } catch (err) {
-      console.error(err)
+    } catch (error) {
+      console.error(error)
     }
 }
 

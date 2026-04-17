@@ -58,7 +58,7 @@ export function SearchBar({ onSearch, onTextChange, initialText }) {
 
           <select name={idLocation} id="filter-location" onChange={handleSubmit}>
             <option value="">Location</option>
-            <option value="remoto">Remote</option>
+            <option value="remote">Remote</option>
             <option value="vancouver">Vancouver</option>
             <option value="toronto">Toronto</option>
             <option value="calgary">Calgary</option>

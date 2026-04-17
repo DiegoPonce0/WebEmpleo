@@ -1,4 +1,5 @@
 import { useAuthStore } from '../store/AuthStore.js'
+import { useFavoriteStore } from '../store/FavoriteStore.js'
 import { Link } from '../components/Link.jsx'
 
 import styles from './Profile.module.css'
@@ -17,6 +18,7 @@ export default function Profile() {
       console.error('Error al cerrar sesión:', error)
     } finally {
       logout()
+      useFavoriteStore.getState().resetFavorites()
     }
   }
 

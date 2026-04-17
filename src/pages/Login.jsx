@@ -1,6 +1,7 @@
 import { useId, useState } from 'react'
 import { useNavigate } from 'react-router'
 import { useAuthStore } from '../store/AuthStore'
+import { useFavoriteStore } from '../store/FavoriteStore'
 import styles from './Login.module.css'
 
 export default function Login() {
@@ -36,6 +37,7 @@ export default function Login() {
         }
 
         login(data.user)
+        await useFavoriteStore.getState().fetchFavorites()
         navigate('/profile')
 
       } catch (error) {

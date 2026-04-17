@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import { NavLink, Outlet } from 'react-router'
 
+import { useFavoriteStore } from '../store/FavoriteStore'
 import { useAuthStore } from '../store/AuthStore'
 
 import styles from './ProfileLayout.module.css'
@@ -28,6 +29,7 @@ export function ProfileLayout() {
       console.error('Error trying to logout:', error)
     } finally {
       logout()
+      useFavoriteStore.getState().resetFavorites()
     }
   }
 
