@@ -1,0 +1,94 @@
+### Get job information
+GET http://localhost:1234/jobs
+
+### Get job information by id
+GET http://localhost:1234/jobs/296f3886-a1c6-44a3-99e3-5452985cd8a7
+
+### To create a job
+POST http://localhost:1234/jobs
+Content-Type: application/json
+
+{
+    
+    "title": "Backend Developer",
+    "company": "Tech Company",
+    "location": "Remote",
+    "description": "We are looking backend developer with experience in Node.js",
+        "data": {
+                "technology": ["nodejs", "express"],
+                "modality": "remote",
+                "level": "senior"
+            },
+        "content": {
+                "description": "Responsibilities of position",
+                "responsibilities": "database integration", 
+                "requirements": "more than 5 years of experience on backend development",
+                "about": "Join to our growing technology team"
+            }
+}
+
+### To register a user
+POST http://localhost:1234/auth/register
+Content-Type: application/json
+
+{
+    
+    "name": "Diego222",
+    "email": "diego@example58.com",
+    "password": "123456Dg"
+}
+
+### To login
+POST http://localhost:1234/auth/login
+Content-Type: application/json
+
+{
+    "email": "diego.test@gmail.com",
+    "password": "123456"
+}
+
+### To logout
+POST http://localhost:1234/auth/logout
+
+### To get user information
+GET http://localhost:1234/auth/me
+
+### To update user profile
+PATCH http://localhost:1234/auth/update
+Content-Type: application/json
+
+{
+    "name": "Diego Updated",
+    "phone": "1234567890",
+    "title": "Backend Developer",
+    "experience": "5 years",
+    "location": "Remote",
+    "skills": ["Node.js", "Express"]
+}
+
+
+### To update job experience of user
+PATCH http://localhost:1234/experiences/2b1d93da-5388-4498-96f9-6813c8712905
+Content-Type: application/json
+
+{
+    "title": "Backend Developer update",
+    "company": "Tech Company update",
+    "start_date": "2020-01-01",
+    "end_date": "2023-01-01",
+    "responsibilities": "responsibilities updated"
+}
+
+### to create a job experience of user
+POST http://localhost:1234/experiences
+Content-Type: application/json
+
+{
+    "title": "Frontend Developer",
+    "company": "Google",
+    "start_date": "2021-01-01",
+    "responsibilities": "Angular"
+}
+
+### to get all favorites
+GET http://localhost:1234/favorites

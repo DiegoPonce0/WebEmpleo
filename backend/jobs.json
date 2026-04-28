@@ -1,0 +1,614 @@
+[
+  {
+    "id": "7a4d1d8b-1e45-4d8c-9f1a-8c2f9a9121a4",
+    "title": "Senior Software Developer",
+    "company": "Tech Solutions Inc.",
+    "location": "Remote",
+    "description": "We are looking for a software engineer with experience in web development and knowledge of JavaScript, React, and Node.js. The ideal candidate should be able to work in a team and have strong communication skills.",
+    "data": {
+      "technology": ["react", "node", "javascript"],
+      "modality": "remote",
+      "level": "senior"
+    },
+    "content": {
+      "description": "Tech Solutions Inc. is seeking a highly motivated and experienced Senior Software Engineer to join our remote team. The ideal candidate will have a strong background in software development, with experience in designing, developing, and implementing scalable and high-performance software solutions. As a Senior Software Engineer, you will be responsible for leading development projects, mentoring junior engineers, and collaborating with cross-functional teams to deliver high-quality software products.",
+      "responsibilities": "- Design, develop, and maintain web applications using modern technologies.\n- Collaborate with product and design teams to define and deliver new features.\n- Write clean, efficient, and well-documented code.\n- Conduct code reviews and provide constructive feedback to team members.\n- Mentor junior engineers and guide their professional development.\n- Participate in team planning meetings and retrospectives.\n- Stay up to date with the latest trends and best practices in software development.",
+      "requirements": "- Bachelor's degree in Computer Science or a related field.\n- Minimum of 5 years of experience in software development.\n- Experience with JavaScript frameworks (e.g., React, Angular, Vue.js).\n- Familiarity with agile methodologies and version control tools (e.g., Git).\n- Excellent communication skills and ability to work in a team.\n- Proven ability to solve complex problems and think critically.",
+      "about": "Tech Solutions Inc. is an innovative technology company focused on creating cutting-edge software solutions for various industries. We are committed to fostering a collaborative and inclusive work environment where every employee can thrive and grow professionally. We offer competitive salaries, comprehensive benefits, and continuous professional development opportunities."
+    }
+  },
+  {
+    "id": "d35b2c89-5d60-4f26-b19a-6cfb2f1a0f57",
+    "title": "Data Analyst",
+    "company": "Data Driven Co.",
+    "location": "Mexico City",
+    "description": "We are looking for a data analyst with experience handling large datasets and data visualization tools. Knowledge of SQL, Python, and R is required.",
+    "data": {
+      "technology": ["python", "sql", "r", "pandas"],
+      "modality": "on-site",
+      "level": "junior"
+    },
+    "content": {
+      "description": "Data Driven Co. is looking for a Data Analyst to join our team in Mexico City. This position is ideal for professionals who are starting their career in data analysis and want to work with large volumes of information to generate valuable insights that drive business decisions.",
+      "responsibilities": "- Collect, process, and analyze large datasets to identify patterns and trends.\n- Create visualizations and reports using tools such as Tableau or Power BI.\n- Collaborate with different departments to understand their data needs.\n- Write efficient SQL queries to extract and transform data.\n- Develop scripts in Python or R to automate recurring analyses.\n- Present findings and recommendations to non-technical stakeholders.",
+      "requirements": "- Bachelor's degree in Statistics, Mathematics, Computer Science, or a related field.\n- Strong knowledge of SQL for database querying.\n- Experience with Python (Pandas, NumPy) or R for data analysis.\n- Familiarity with data visualization tools.\n- Analytical mindset and attention to detail.\n- Strong communication skills to explain technical results.",
+      "about": "Data Driven Co. is a leading company in data analytics solutions that helps organizations make data-driven decisions. We offer a continuous learning environment, professional growth opportunities, and the chance to work with cutting-edge technologies in the data analytics field."
+    }
+  },
+  {
+    "id": "e31f9a92-61d7-4b7a-b3a2-91e8c1f40b2d",
+    "title": "Mobile Application Developer",
+    "company": "Mobile Apps Ltd.",
+    "location": "Guadalajara",
+    "description": "We are looking for a mobile application developer with experience in iOS and/or Android. The candidate should have knowledge of Swift, Kotlin, and user interface development.",
+    "data": {
+      "technology": ["swift", "kotlin", "react-native", "flutter"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "Mobile Apps Ltd. is seeking a Mobile Application Developer with experience in building native and cross-platform applications. You will work on diverse projects that impact millions of users, developing innovative and high-performance mobile solutions.",
+      "responsibilities": "- Develop native mobile applications for iOS using Swift or Android using Kotlin.\n- Implement attractive and functional user interfaces following design guidelines.\n- Integrate RESTful APIs and backend services into mobile applications.\n- Optimize application performance across different devices.\n- Participate in code reviews and quality testing.\n- Stay up to date with the latest trends in mobile development.",
+      "requirements": "- Proven experience developing mobile applications (iOS or Android).\n- Proficiency in Swift for iOS or Kotlin for Android.\n- Knowledge of cross-platform frameworks such as React Native or Flutter.\n- Understanding of mobile UI/UX design principles.\n- Experience with version control (Git).\n- A portfolio of published applications on the App Store or Google Play is a plus.",
+      "about": "Mobile Apps Ltd. is a company specialized in mobile application development that has created solutions for clients across various industries. We value creativity, innovation, and teamwork. We offer a dynamic environment where developers can grow professionally and work with the latest mobile technologies."
+    }
+  },
+  {
+    "id": "f62d8a34-923a-4ac2-9b0b-14e0ac2f5405",
+    "title": "DevOps Engineer",
+    "company": "Cloud Services SA",
+    "location": "Remote",
+    "description": "We are looking for a DevOps engineer with experience in managing cloud infrastructure, process automation, and continuous integration tools. Knowledge of AWS, Azure, or GCP is required.",
+    "data": {
+      "technology": ["aws", "azure", "gcp", "docker", "kubernetes", "terraform"],
+      "modality": "remote",
+      "level": "mid"
+    },
+    "content": {
+      "description": "Cloud Services SA is looking for a DevOps Engineer to manage and optimize our cloud infrastructure. You will be responsible for implementing CI/CD practices, automating deployments, and ensuring high availability of our production systems.",
+      "responsibilities": "- Design, implement, and maintain cloud infrastructure on AWS, Azure, or GCP.\n- Develop and maintain CI/CD pipelines to automate deployments.\n- Manage containers with Docker and orchestrate them using Kubernetes.\n- Implement infrastructure as code using Terraform or CloudFormation.\n- Monitor systems and resolve production incidents.\n- Optimize cloud infrastructure cost and performance.\n- Collaborate with development teams to improve delivery processes.",
+      "requirements": "- Hands-on experience with at least one cloud platform (AWS, Azure, or GCP).\n- Strong knowledge of Docker and Kubernetes.\n- Experience with IaC tools such as Terraform or Ansible.\n- Familiarity with CI/CD tools (Jenkins, GitLab CI, GitHub Actions).\n- Scripting skills (Bash, Python).\n- Understanding of networking, security, and cloud best practices.\n- Cloud certifications are a plus.",
+      "about": "Cloud Services SA is a leading cloud solutions company that helps organizations migrate and optimize their infrastructure. We work with cutting-edge technologies and offer a flexible remote work environment, along with certification opportunities and continuous professional development."
+    }
+  },
+  {
+    "id": "a9f31a8e-ec38-4fd3-9114-88cc6d37a92b",
+    "title": "UX/UI Designer",
+    "company": "Creative Minds Studio",
+    "location": "Barcelona",
+    "description": "We are looking for a UX/UI designer with a passion for creating exceptional digital experiences. Experience with Figma, user-centered design, and collaboration with development teams is required.",
+    "data": {
+      "technology": ["figma", "sketch", "adobe-xd", "prototyping"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "Creative Minds Studio is seeking a creative and detail-oriented UX/UI Designer to craft intuitive and visually appealing interfaces. You will work on innovative projects, from concept to final delivery.",
+      "responsibilities": "- Create wireframes, prototypes, and high-fidelity designs using Figma.\n- Conduct user research and usability testing.\n- Design user-centered interfaces for web and mobile applications.\n- Collaborate closely with developers to ensure proper implementation.\n- Maintain and evolve design systems and style guides.\n- Present design concepts to stakeholders and clients.",
+      "requirements": "- Strong portfolio demonstrating UX/UI design experience.\n- Proficiency in Figma and knowledge of other tools such as Sketch or Adobe XD.\n- Experience with user-centered design methodologies.\n- Understanding of visual design principles, typography, and color theory.\n- Ability to create interactive prototypes.\n- Excellent communication and presentation skills.",
+      "about": "Creative Minds Studio is a digital design studio based in Barcelona, specializing in creating exceptional experiences for innovative brands. We foster creativity, collaboration, and professional growth in an inspiring environment."
+    }
+  },
+  {
+    "id": "c1b65b42-68c5-4f1c-a8c2-8d52c5a7a5d1",
+    "title": "Database Administrator",
+    "company": "Secure Data Corp.",
+    "location": "Buenos Aires",
+    "description": "We are looking for a database administrator with experience in PostgreSQL and MySQL. The candidate will be responsible for ensuring the availability, security, and performance of production databases.",
+    "data": {
+      "technology": ["postgresql", "mysql", "mongodb", "redis"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "Secure Data Corp. is seeking an experienced Database Administrator to manage and optimize our critical database systems. You will be responsible for ensuring the integrity, availability, and security of the company's data.",
+      "responsibilities": "- Administer and maintain PostgreSQL and MySQL databases in production environments.\n- Implement backup and disaster recovery strategies.\n- Monitor database performance and optimize queries.\n- Manage database security, users, and permissions.\n- Plan and execute database upgrades and migrations.\n- Resolve critical database-related incidents.\n- Document procedures and configurations.",
+      "requirements": "- Strong experience in PostgreSQL and MySQL administration.\n- Knowledge of NoSQL databases such as MongoDB or Redis.\n- Experience with automation scripting (Bash, Python).\n- Understanding of replication, clustering, and high availability.\n- Knowledge of database security and best practices.\n- Ability to work under pressure and solve critical issues.",
+      "about": "Secure Data Corp. is a company specialized in secure data management solutions for organizations across various industries. We offer a professional environment with growth opportunities and certifications in database technologies."
+    }
+  },
+  {
+    "id": "bb8f2a99-6a20-4f9e-912a-16f54a49b8c3",
+    "title": "Cybersecurity Specialist",
+    "company": "SafeNet Solutions",
+    "location": "Remote",
+    "description": "We are looking for a cybersecurity specialist with knowledge in infrastructure protection, vulnerability analysis, and incident response. Experience with SIEM and security certifications is a plus.",
+    "data": {
+      "technology": ["siem", "penetration-testing", "firewall", "security-tools"],
+      "modality": "remote",
+      "level": "mid"
+    },
+    "content": {
+      "description": "SafeNet Solutions is seeking a Cybersecurity Specialist to protect our systems and data against threats. You will work on implementing security measures, risk analysis, and responding to security incidents.",
+      "responsibilities": "- Monitor and analyze security events using SIEM tools.\n- Perform vulnerability assessments and penetration testing.\n- Implement and manage security solutions (firewalls, IDS/IPS).\n- Respond to security incidents and conduct forensic investigations.\n- Develop and maintain security policies and procedures.\n- Stay up to date with emerging threats and security trends.\n- Train staff on security best practices.",
+      "requirements": "- Experience in cybersecurity and risk management.\n- Knowledge of SIEM tools and log analysis.\n- Experience with penetration testing and vulnerability assessment.\n- Familiarity with security frameworks (NIST, ISO 27001).\n- Certifications such as CEH, CISSP, or CompTIA Security+ are a plus.\n- Strong analytical skills and ability to solve complex problems.",
+      "about": "SafeNet Solutions is a leading cybersecurity services company that helps organizations protect their digital assets. We offer a flexible remote work environment, certification opportunities, and continuous professional development in the field of information security."
+    }
+  },
+  {
+    "id": "fe7b2c54-4f47-4e2b-9e87-2b5413a6b24f",
+    "title": "Product Manager",
+    "company": "NextGen Technologies",
+    "location": "Madrid",
+    "description": "We are looking for a Product Manager with experience in defining and launching digital products. Strong analytical skills, leadership, and knowledge of agile methodologies are required.",
+    "data": {
+      "technology": ["agile", "scrum", "jira", "analytics", "product-strategy"],
+      "modality": "on-site",
+      "level": "senior"
+    },
+    "content": {
+      "description": "NextGen Technologies is seeking a Senior Product Manager to lead the development and launch of innovative digital products. You will be responsible for defining the product vision, working with stakeholders, and guiding cross-functional teams.",
+      "responsibilities": "- Define and communicate the product vision and strategy.\n- Manage the backlog and prioritize features based on business value.\n- Collaborate with development, design, and marketing teams.\n- Conduct market research and competitive analysis.\n- Analyze product metrics and make data-driven decisions.\n- Plan and coordinate product launches.\n- Gather feedback from users and stakeholders.",
+      "requirements": "- Proven experience as a Product Manager for digital products.\n- Strong knowledge of agile methodologies (Scrum, Kanban).\n- Analytical skills and experience with analytics tools.\n- Excellent communication and leadership skills.\n- Ability to make data-driven decisions.\n- Experience with tools such as Jira and Confluence.\n- Bachelor's degree in business, technology, or a related field.",
+      "about": "NextGen Technologies is an innovative company that develops cutting-edge digital products. We value leadership, innovation, and strategic thinking. We offer a dynamic environment with opportunities for growth and professional development."
+    }
+  },
+  {
+    "id": "a71f7a92-56d9-4b42-9f16-cb29b40e5f2c",
+    "title": "Frontend Developer",
+    "company": "Bright Web Studio",
+    "location": "Valencia",
+    "description": "We are looking for a frontend developer with experience in React, TypeScript, and Tailwind CSS. Knowledge of performance optimization and web accessibility is a plus.",
+    "data": {
+      "technology": ["react", "typescript", "tailwind", "css"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "Bright Web Studio is seeking a Frontend Developer with experience in modern technologies to build attractive and high-performance web interfaces. You will work on diverse projects that require attention to detail and technical excellence.",
+      "responsibilities": "- Develop and maintain web applications using React and TypeScript.\n- Implement responsive designs with Tailwind CSS.\n- Optimize applications for maximum performance and scalability.\n- Ensure web accessibility following WCAG standards.\n- Collaborate with designers and backend developers.\n- Write clean, maintainable, and well-documented code.\n- Participate in code reviews and continuous improvement.",
+      "requirements": "- Strong experience with React and TypeScript.\n- Proficiency in Tailwind CSS and modern CSS.\n- Knowledge of web performance optimization.\n- Familiarity with web accessibility (a11y).\n- Experience with Git and collaborative development workflows.\n- Understanding of responsive design principles.\n- Knowledge of build tools (Vite, Webpack).",
+      "about": "Bright Web Studio is a web studio based in Valencia specializing in creating exceptional web experiences. We offer a creative and collaborative environment where developers can grow professionally and work on challenging projects."
+    }
+  },
+  {
+    "id": "f91e4c7b-3840-43da-8ad7-3a52e2a8cf1d",
+    "title": "Backend Developer",
+    "company": "APIWorks",
+    "location": "Bogota",
+    "description": "We are looking for a backend developer with experience in Node.js, Express, and NoSQL databases. Knowledge of microservices architecture is required.",
+    "data": {
+      "technology": ["node", "express", "mongodb", "microservices"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "APIWorks is seeking a Backend Developer with experience in Node.js to build robust and scalable APIs. You will work on microservices architectures and high-performance distributed systems.",
+      "responsibilities": "- Design and develop RESTful APIs using Node.js and Express.\n- Implement business logic in a microservices architecture.\n- Work with NoSQL databases, especially MongoDB.\n- Optimize database queries and operations for performance.\n- Implement authentication, authorization, and API security.\n- Write unit and integration tests.\n- Document APIs and code.",
+      "requirements": "- Strong experience with Node.js and Express.\n- Deep knowledge of JavaScript/TypeScript.\n- Experience with MongoDB and NoSQL databases.\n- Understanding of microservices architecture.\n- Familiarity with RESTful APIs and design principles.\n- Experience with version control (Git).\n- Knowledge of containers (Docker) is a plus.",
+      "about": "APIWorks is a company specialized in API development and scalable backend solutions. We offer a professional environment with opportunities to work on challenging projects using modern technologies."
+    }
+  },
+  {
+    "id": "b65a3c9f-b174-4d86-b8a2-9cf9b1e13a22",
+    "title": "Machine Learning Engineer",
+    "company": "AI Labs",
+    "location": "Remote",
+    "description": "We are looking for a machine learning engineer with experience in predictive models and data processing. Knowledge of TensorFlow, PyTorch, and MLOps is a plus.",
+    "data": {
+      "technology": ["python", "tensorflow", "pytorch", "scikit-learn", "mlops"],
+      "modality": "remote",
+      "level": "senior"
+    },
+    "content": {
+      "description": "AI Labs is seeking a Senior Machine Learning Engineer to develop and deploy ML models in production. You will work on cutting-edge projects applying advanced machine learning techniques to solve complex problems.",
+      "responsibilities": "- Design, train, and deploy machine learning models.\n- Process and analyze large volumes of data for training.\n- Implement MLOps pipelines to automate the model lifecycle.\n- Evaluate and optimize model performance in production.\n- Collaborate with product and data engineering teams.\n- Research and apply new ML techniques and algorithms.\n- Document processes, models, and results.",
+      "requirements": "- Master's or PhD in Computer Science, Statistics, or a related field.\n- Strong experience with TensorFlow, PyTorch, or similar frameworks.\n- Proficiency in Python and ML libraries (scikit-learn, pandas, numpy).\n- Experience deploying models in production.\n- Knowledge of MLOps and orchestration tools.\n- Strong background in mathematics and statistics.\n- Publications or contributions to ML projects are a plus.",
+      "about": "AI Labs is an artificial intelligence research and development company working on ML solutions across various industries. We offer a flexible remote work environment, access to cutting-edge computational resources, and opportunities to contribute to innovative research."
+    }
+  },
+  {
+    "id": "e8d13c45-36cb-46cf-8f9d-8a0a7b532b8b",
+    "title": "QA Automation Engineer",
+    "company": "Quality First",
+    "location": "Lima",
+    "description": "We are looking for a QA engineer with experience in test automation using tools such as Selenium, Cypress, or Playwright. Knowledge of CI/CD is desired.",
+    "data": {
+      "technology": ["selenium", "cypress", "playwright", "jest", "testing"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "Quality First is seeking a QA Automation Engineer to develop and maintain automated test suites. You will play a key role in ensuring software quality through effective testing strategies.",
+      "responsibilities": "- Design and implement automated tests using Selenium, Cypress, or Playwright.\n- Develop scalable test automation frameworks.\n- Integrate automated tests into CI/CD pipelines.\n- Execute and maintain regression test suites.\n- Identify, document, and track defects.\n- Collaborate with developers to improve code testability.\n- Generate quality reports and coverage metrics.",
+      "requirements": "- Experience in web test automation using modern tools.\n- Knowledge of Selenium, Cypress, or Playwright.\n- Experience with testing frameworks (Jest, Mocha, JUnit).\n- Familiarity with CI/CD integration (Jenkins, GitLab CI, GitHub Actions).\n- Knowledge of JavaScript/TypeScript or Python.\n- Understanding of testing methodologies and best practices.\n- Strong analytical skills and attention to detail.",
+      "about": "Quality First is a company dedicated to ensuring excellence in software quality. We offer a collaborative environment where QA engineers are valued as an integral part of the development process."
+    }
+  },
+  {
+    "id": "d2e93b8a-0b41-4d09-9a52-36a0f418d493",
+    "title": "System Administrator",
+    "company": "InfraTech Global",
+    "location": "Santiago, Chile",
+    "description": "We are looking for a system administrator with experience in Linux, Docker, and server monitoring. Knowledge of Bash or Python scripting is a plus.",
+    "data": {
+      "technology": ["linux", "docker", "bash", "python", "monitoring"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "InfraTech Global is seeking a System Administrator to manage and maintain our Linux server infrastructure. You will be responsible for ensuring the availability, performance, and security of our systems.",
+      "responsibilities": "- Administer and maintain Linux servers in production environments.\n- Configure and manage Docker containers.\n- Implement and maintain monitoring and alerting systems.\n- Develop automation scripts in Bash or Python.\n- Perform preventive and corrective maintenance tasks.\n- Manage backups and recovery procedures.\n- Resolve technical incidents and performance issues.",
+      "requirements": "- Strong experience in Linux system administration.\n- Knowledge of Docker and containerization.\n- Scripting skills (Bash, Python).\n- Experience with monitoring tools (Prometheus, Grafana, Nagios).\n- Knowledge of networking and system security.\n- Ability to work under pressure and resolve critical issues.\n- Linux certifications (LPIC, RHCE) are a plus.",
+      "about": "InfraTech Global is a technology infrastructure services company that provides solutions to organizations of various sizes. We offer a professional environment with opportunities for certification and growth in the infrastructure field."
+    }
+  },
+  {
+    "id": "cc0c1fae-4e85-4e2c-9b02-f12f9df8a2c9",
+    "title": "Scrum Master",
+    "company": "Agile Minds",
+    "location": "Madrid",
+    "description": "We are looking for a Scrum Master with experience in agile methodologies and managing cross-functional teams. Scrum Master certification is desirable.",
+    "data": {
+      "technology": ["scrum", "agile", "jira", "confluence", "kanban"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "Agile Minds is seeking a Scrum Master to facilitate and lead agile development teams. You will be responsible for ensuring the team follows Scrum practices and achieves sprint goals.",
+      "responsibilities": "- Facilitate Scrum ceremonies (daily standups, planning, retrospectives, reviews).\n- Remove impediments blocking team progress.\n- Coach teams on agile practices and values.\n- Manage backlog and ensure user stories are ready.\n- Promote continuous improvement through effective retrospectives.\n- Collaborate with Product Owner and stakeholders.\n- Generate metrics and progress reports.",
+      "requirements": "- Scrum Master certification (CSM, PSM) is desirable.\n- Experience facilitating Scrum teams.\n- Strong knowledge of agile methodologies (Scrum, Kanban).\n- Experience with Jira and Confluence.\n- Excellent communication and facilitation skills.\n- Ability to resolve conflicts and lead teams.\n- Results-oriented mindset and continuous improvement.",
+      "about": "Agile Minds is a consulting firm specialized in agile transformation. We offer a continuous learning environment, certifications, and the opportunity to work with diverse clients."
+    }
+  },
+  {
+    "id": "a2f1d8c6-b72c-45f5-bcc5-5c1d1f39b0b1",
+    "title": "Level 2 Technical Support",
+    "company": "HelpDesk Pro",
+    "location": "Monterrey",
+    "description": "We are looking for a support technician with skills in incident resolution, networking, and operating systems. Attention to detail and excellent customer interaction are required.",
+    "data": {
+      "technology": ["windows", "linux", "networking", "troubleshooting"],
+      "modality": "on-site",
+      "level": "junior"
+    },
+    "content": {
+      "description": "HelpDesk Pro is seeking a Level 2 Technical Support Technician to handle escalated technical incidents and provide effective solutions.",
+      "responsibilities": "- Handle and resolve level 2 support tickets.\n- Diagnose and troubleshoot hardware and software issues.\n- Configure and maintain Windows and Linux systems.\n- Provide networking and connectivity support.\n- Document solutions and procedures.\n- Escalate complex issues to level 3 when necessary.\n- Maintain effective communication with end users.",
+      "requirements": "- Experience in technical support or helpdesk.\n- Knowledge of Windows and Linux operating systems.\n- Basic networking knowledge (TCP/IP, DNS, DHCP).\n- Troubleshooting skills.\n- Strong communication and customer service skills.\n- Ability to work under pressure.\n- IT+ or similar certifications are a plus.",
+      "about": "HelpDesk Pro is a technical support services company providing assistance to organizations across various industries."
+    }
+  },
+  {
+    "id": "b3c8e9f2-7d41-4e92-a8b3-2f5c6d8e9a1b",
+    "title": "Full Stack Developer",
+    "company": "WebDev Masters",
+    "location": "Remote",
+    "description": "We are looking for a full stack developer with strong frontend and backend skills. Experience with React, Node.js, PostgreSQL, and Docker is essential.",
+    "data": {
+      "technology": ["react", "node", "postgresql", "docker", "typescript"],
+      "modality": "remote",
+      "level": "senior"
+    },
+    "content": {
+      "description": "WebDev Masters is seeking a Senior Full Stack Developer with end-to-end web development experience.",
+      "responsibilities": "- Develop full web applications using React and Node.js.\n- Design and maintain scalable RESTful APIs.\n- Work with PostgreSQL and optimize queries.\n- Manage Docker containers.\n- Write clean TypeScript code.\n- Participate in architecture decisions.\n- Collaborate across teams.",
+      "requirements": "- Strong experience as a Full Stack Developer.\n- Expertise in React and modern frontend.\n- Experience with Node.js APIs.\n- Deep knowledge of PostgreSQL.\n- Experience with Docker.\n- Proficiency in TypeScript.\n- Understanding of best practices.\n- Experience with Git and agile.",
+      "about": "WebDev Masters builds innovative digital solutions for global clients."
+    }
+  },
+  {
+    "id": "c4d9f0a3-8e52-4f93-b9c4-3g6d7e9f0b2c",
+    "title": "Data Engineer",
+    "company": "BigData Solutions",
+    "location": "Mexico City",
+    "description": "We are looking for a data engineer with experience in ETL pipelines, Apache Spark, and data lake architectures. Knowledge of AWS or GCP is required.",
+    "data": {
+      "technology": ["python", "spark", "aws", "sql", "airflow"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "BigData Solutions is seeking a Data Engineer to design scalable data pipelines.",
+      "responsibilities": "- Build ETL pipelines with Apache Spark.\n- Maintain data lakes and warehouses.\n- Orchestrate workflows with Airflow.\n- Work with AWS data services.\n- Optimize SQL queries.\n- Ensure data quality.\n- Collaborate with data teams.",
+      "requirements": "- Experience in data engineering.\n- Strong Python skills.\n- Experience with Spark.\n- Knowledge of AWS or GCP.\n- Experience with Airflow.\n- Strong SQL skills.\n- Experience with CI/CD.",
+      "about": "BigData Solutions specializes in big data and analytics."
+    }
+  },
+  {
+    "id": "d5e0a1b4-9f63-5a04-c0d5-4h7e8f0a1c3d",
+    "title": "iOS Developer",
+    "company": "AppFactory Inc.",
+    "location": "Guadalajara",
+    "description": "iOS developer with experience in Swift, SwiftUI, and MVVM architecture. App Store portfolio is a plus.",
+    "data": {
+      "technology": ["swift", "swiftui", "ios", "xcode"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "AppFactory Inc. is seeking an iOS Developer to build high-quality mobile apps.",
+      "responsibilities": "- Develop iOS apps using Swift and SwiftUI.\n- Implement MVVM architecture.\n- Integrate APIs.\n- Optimize performance.\n- Test apps.\n- Publish to App Store.\n- Stay updated.",
+      "requirements": "- Strong iOS experience.\n- Swift/SwiftUI proficiency.\n- MVVM knowledge.\n- Xcode experience.\n- Knowledge of Apple guidelines.\n- App Store experience.\n- Portfolio preferred.",
+      "about": "AppFactory builds innovative mobile apps."
+    }
+  },
+  {
+    "id": "e6f1b2c5-0a74-6b15-d1e6-5i8f9a1b2d4e",
+    "title": "Cloud Architect",
+    "company": "CloudNative Corp",
+    "location": "Remote",
+    "description": "Senior cloud architect with expertise in AWS, Azure, or GCP. Certifications are highly valued.",
+    "data": {
+      "technology": ["aws", "azure", "kubernetes", "terraform", "microservices"],
+      "modality": "remote",
+      "level": "senior"
+    },
+    "content": {
+      "description": "CloudNative Corp is seeking a Senior Cloud Architect.",
+      "responsibilities": "- Design scalable architectures.\n- Lead migrations.\n- Implement microservices.\n- Ensure security.\n- Lead evaluations.\n- Optimize costs.\n- Mentor teams.",
+      "requirements": "- Strong cloud experience.\n- Expertise in AWS/Azure/GCP.\n- Kubernetes experience.\n- Terraform knowledge.\n- Microservices experience.\n- Certifications preferred.",
+      "about": "CloudNative Corp specializes in cloud-native solutions."
+    }
+  },
+  {
+    "id": "f7g2c3d6-1b85-7c26-e2f7-6j9a0b2c3e5f",
+    "title": "UX Researcher",
+    "company": "UserCentric Design",
+    "location": "Barcelona",
+    "description": "UX researcher for user studies, usability analysis, and A/B testing.",
+    "data": {
+      "technology": ["figma", "analytics", "user-research", "prototyping"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "UserCentric Design is seeking a UX Researcher.",
+      "responsibilities": "- Conduct user research.\n- Run usability tests.\n- Perform A/B testing.\n- Analyze data.\n- Create UX artifacts.\n- Present findings.\n- Collaborate.",
+      "requirements": "- UX research experience.\n- Qualitative/quantitative methods.\n- Interview/testing experience.\n- Analytics tools.\n- Strong communication.",
+      "about": "UserCentric Design focuses on user-centered strategy."
+    }
+  },
+  {
+    "id": "g8h3d4e7-2c96-8d37-f3g8-7k0b1c3d4f6g",
+    "title": "Database Administrator",
+    "company": "DataSecure Systems",
+    "location": "Buenos Aires",
+    "description": "Database administrator with expertise in Oracle, SQL Server, and MongoDB.",
+    "data": {
+      "technology": ["oracle", "sql-server", "mongodb", "postgresql"],
+      "modality": "on-site",
+      "level": "senior"
+    },
+    "content": {
+      "description": "DataSecure Systems is seeking a Senior DBA.",
+      "responsibilities": "- Manage databases.\n- Implement backups.\n- Optimize performance.\n- Handle migrations.\n- Ensure security.\n- Implement HA.\n- Provide support.",
+      "requirements": "- Strong Oracle/SQL Server.\n- MongoDB knowledge.\n- PostgreSQL preferred.\n- Performance tuning.\n- HA/DR knowledge.\n- Scripting skills.",
+      "about": "DataSecure Systems manages enterprise data infrastructure."
+    }
+  },
+  {
+    "id": "h9i4e5f8-3d07-9e48-g4h9-8l1c2d4e5g7h",
+    "title": "Penetration Tester",
+    "company": "SecureIT Labs",
+    "location": "Remote",
+    "description": "Penetration tester for web, mobile, and infrastructure security.",
+    "data": {
+      "technology": ["kali-linux", "penetration-testing", "security-tools", "python"],
+      "modality": "remote",
+      "level": "mid"
+    },
+    "content": {
+      "description": "SecureIT Labs is seeking a Penetration Tester.",
+      "responsibilities": "- Perform pentesting.\n- Assess security.\n- Exploit vulnerabilities ethically.\n- Report findings.\n- Recommend fixes.\n- Stay updated.\n- Use tools.",
+      "requirements": "- Pentesting experience.\n- Tool proficiency.\n- Kali Linux.\n- Scripting skills.\n- OWASP knowledge.\n- Certifications preferred.",
+      "about": "SecureIT Labs focuses on offensive security."
+    }
+  },
+  {
+    "id": "i0j5f6g9-4e18-0f59-h5i0-9m2d3e5f6h8i",
+    "title": "Technical Product Owner",
+    "company": "AgileTech Solutions",
+    "location": "Madrid",
+    "description": "Technical Product Owner with software development background.",
+    "data": {
+      "technology": ["agile", "scrum", "jira", "sql", "api"],
+      "modality": "on-site",
+      "level": "senior"
+    },
+    "content": {
+      "description": "AgileTech Solutions is seeking a Technical Product Owner.",
+      "responsibilities": "- Manage backlog.\n- Write user stories.\n- Work with stakeholders.\n- Support dev teams.\n- Join ceremonies.\n- Make decisions.\n- Analyze metrics.",
+      "requirements": "- Technical background.\n- Product Owner experience.\n- Agile knowledge.\n- Jira experience.\n- Technical skills.\n- Communication skills.",
+      "about": "AgileTech Solutions builds digital products."
+    }
+  },
+  {
+    "id": "j1k6g7h0-5f29-1g60-i6j1-0n3e4f6g7i9j",
+    "title": "React Native Developer",
+    "company": "MobileFirst Studio",
+    "location": "Valencia",
+    "description": "Mobile application developer specialized in React Native to build cross-platform mobile apps. Experience with API integration and app store publishing is required.",
+    "data": {
+      "technology": ["react-native", "javascript", "typescript", "redux"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "MobileFirst Studio is looking for a React Native Developer to build high-quality cross-platform mobile applications.",
+      "responsibilities": "- Develop cross-platform mobile applications with React Native.\n- Implement responsive and high-performance user interfaces.\n- Integrate RESTful APIs and backend services.\n- Manage application state using Redux or Context API.\n- Optimize mobile application performance.\n- Publish and maintain apps on the App Store and Google Play.\n- Collaborate with designers to implement pixel-perfect UIs.",
+      "requirements": "- Strong experience with React Native development.\n- Proficiency in JavaScript/TypeScript.\n- Experience with Redux or state management tools.\n- Knowledge of native modules and APIs.\n- Experience publishing apps to App Store and Google Play.\n- Familiarity with build tools (Xcode, Android Studio).\n- Understanding of mobile development best practices.",
+      "about": "MobileFirst Studio is a mobile development studio in Valencia that builds innovative applications for clients across industries."
+    }
+  },
+  {
+    "id": "k2l7h8i1-6g30-2h71-j7k2-1o4f5g7h8j0k",
+    "title": "Golang Backend Engineer",
+    "company": "ScalableSystems",
+    "location": "Bogota",
+    "description": "Backend engineer specialized in Go for building high-performance microservices. Experience with gRPC, PostgreSQL, and distributed systems is required.",
+    "data": {
+      "technology": ["golang", "grpc", "postgresql", "redis", "kubernetes"],
+      "modality": "on-site",
+      "level": "senior"
+    },
+    "content": {
+      "description": "ScalableSystems is seeking a Senior Golang Backend Engineer to build high-performance microservices.",
+      "responsibilities": "- Build scalable microservices in Go.\n- Implement service-to-service communication using gRPC.\n- Design and optimize PostgreSQL schemas.\n- Implement caching strategies using Redis.\n- Deploy and manage services on Kubernetes.\n- Write robust unit and integration tests.\n- Optimize system performance and scalability.",
+      "requirements": "- Strong experience with Go (Golang).\n- Deep knowledge of gRPC and Protocol Buffers.\n- Experience with PostgreSQL design and optimization.\n- Experience with Redis caching strategies.\n- Kubernetes and containerization experience.\n- Understanding of distributed systems.\n- Knowledge of concurrency and goroutines.",
+      "about": "ScalableSystems builds high-performance backend systems for enterprise clients."
+    }
+  },
+  {
+    "id": "l3m8i9j2-7h41-3i82-k8l3-2p5g6h8i9k1l",
+    "title": "AI Research Scientist",
+    "company": "DeepLearning Labs",
+    "location": "Remote",
+    "description": "AI research scientist focused on deep learning models. PhD or Master's in AI/ML required. Publications in top conferences are highly valued.",
+    "data": {
+      "technology": ["python", "tensorflow", "pytorch", "nlp", "computer-vision"],
+      "modality": "remote",
+      "level": "senior"
+    },
+    "content": {
+      "description": "DeepLearning Labs is seeking an AI Research Scientist to develop cutting-edge deep learning models.",
+      "responsibilities": "- Research and develop new deep learning algorithms.\n- Implement NLP and Computer Vision models.\n- Design and run research experiments.\n- Publish research in top-tier conferences and journals.\n- Collaborate with engineering teams to productionize models.\n- Stay updated with latest AI research.\n- Mentor junior researchers.",
+      "requirements": "- PhD or Master's in AI, ML, or related field.\n- Strong background in math, statistics, and ML.\n- Experience with TensorFlow and PyTorch.\n- Expertise in NLP or Computer Vision.\n- Publications in top conferences (NeurIPS, ICML, CVPR, ACL).\n- Strong Python programming skills.\n- Ability to communicate complex research.",
+      "about": "DeepLearning Labs is an AI research lab working on cutting-edge machine learning problems."
+    }
+  },
+  {
+    "id": "m4n9j0k3-8i52-4j93-l9m4-3q6h7i9j0l2m",
+    "title": "Manual QA Tester",
+    "company": "QualityAssurance Pro",
+    "location": "Lima",
+    "description": "Manual tester responsible for executing test cases, reporting bugs, and validating features.",
+    "data": {
+      "technology": ["testing", "jira", "test-case-management", "sql"],
+      "modality": "on-site",
+      "level": "junior"
+    },
+    "content": {
+      "description": "QualityAssurance Pro is seeking a Manual QA Tester to ensure software quality through manual testing.",
+      "responsibilities": "- Execute manual test cases.\n- Identify and report bugs.\n- Perform regression testing.\n- Participate in requirement reviews.\n- Maintain test documentation.\n- Perform exploratory testing.\n- Collaborate with developers.",
+      "requirements": "- Experience in manual QA testing.\n- Knowledge of QA lifecycle.\n- Familiarity with Jira or TestRail.\n- Basic SQL knowledge.\n- Attention to detail.\n- Analytical skills.\n- Good written communication.",
+      "about": "QualityAssurance Pro provides QA services focused on software quality assurance."
+    }
+  },
+  {
+    "id": "n5o0k1l4-9j63-5k04-m0n5-4r7i8j0k1m3n",
+    "title": "Site Reliability Engineer",
+    "company": "ReliableOps",
+    "location": "Santiago, Chile",
+    "description": "SRE responsible for ensuring system reliability, scalability, and performance.",
+    "data": {
+      "technology": ["kubernetes", "prometheus", "grafana", "terraform", "python"],
+      "modality": "on-site",
+      "level": "senior"
+    },
+    "content": {
+      "description": "ReliableOps is seeking a Senior Site Reliability Engineer to ensure system reliability and performance.",
+      "responsibilities": "- Ensure service availability and performance.\n- Implement monitoring with Prometheus and Grafana.\n- Manage Kubernetes infrastructure.\n- Automate operations with Terraform and Python.\n- Define SLIs, SLOs, SLAs.\n- Participate in on-call rotation.\n- Conduct postmortems and improvements.",
+      "requirements": "- Strong SRE experience.\n- Kubernetes expertise.\n- Monitoring/observability tools experience.\n- Terraform knowledge.\n- Python or Go programming skills.\n- Distributed systems knowledge.\n- Cloud experience.",
+      "about": "ReliableOps specializes in reliability engineering for large-scale systems."
+    }
+  },
+  {
+    "id": "o6p1l2m5-0k74-6l15-n1o6-5s8j9k1l2n4o",
+    "title": "Agile Coach",
+    "company": "TransformationHub",
+    "location": "Madrid",
+    "description": "Agile coach for organizational transformation using Scrum, Kanban, and SAFe.",
+    "data": {
+      "technology": ["scrum", "kanban", "safe", "agile", "coaching"],
+      "modality": "on-site",
+      "level": "senior"
+    },
+    "content": {
+      "description": "TransformationHub is seeking a Senior Agile Coach to lead agile transformations.",
+      "responsibilities": "- Coach teams and leadership.\n- Lead agile transformations.\n- Deliver workshops.\n- Implement agile frameworks.\n- Remove organizational blockers.\n- Mentor Scrum Masters.\n- Track transformation progress.",
+      "requirements": "- Extensive Agile coaching experience.\n- Scrum, Kanban, SAFe expertise.\n- Agile certifications preferred.\n- Experience in transformations.\n- Strong facilitation skills.\n- Leadership influence.\n- Training skills.",
+      "about": "TransformationHub helps organizations adopt agile practices."
+    }
+  },
+  {
+    "id": "p7q2m3n6-1l85-7m26-o2p7-6t9k0l2m3o5p",
+    "title": "IT Support Specialist",
+    "company": "TechSupport Solutions",
+    "location": "Monterrey",
+    "description": "IT support specialist for user support, device maintenance, and account administration.",
+    "data": {
+      "technology": ["windows", "office365", "active-directory", "networking"],
+      "modality": "on-site",
+      "level": "junior"
+    },
+    "content": {
+      "description": "TechSupport Solutions is seeking an IT Support Specialist to provide technical support.",
+      "responsibilities": "- Provide user support.\n- Manage Active Directory accounts.\n- Configure Office 365.\n- Maintain devices.\n- Handle migrations.\n- Fix network issues.\n- Document solutions.",
+      "requirements": "- IT support experience.\n- Windows systems knowledge.\n- Active Directory experience.\n- Office 365 familiarity.\n- Networking basics.\n- Communication skills.\n- Teamwork ability.",
+      "about": "TechSupport Solutions provides IT support services."
+    }
+  },
+  {
+    "id": "q8r3n4o7-2m96-8n37-p3q8-7u0l1m3n4p6q",
+    "title": "Blockchain Developer",
+    "company": "CryptoTech Innovations",
+    "location": "Remote",
+    "description": "Blockchain developer for smart contracts and dApps using Solidity and Ethereum.",
+    "data": {
+      "technology": ["solidity", "ethereum", "web3", "javascript", "blockchain"],
+      "modality": "remote",
+      "level": "mid"
+    },
+    "content": {
+      "description": "CryptoTech Innovations is seeking a Blockchain Developer.",
+      "responsibilities": "- Build smart contracts.\n- Develop dApps.\n- Integrate Web3 applications.\n- Audit smart contracts.\n- Optimize gas usage.\n- Deploy contracts.\n- Stay updated in Web3.",
+      "requirements": "- Solidity experience.\n- Ethereum knowledge.\n- Web3.js or ethers.js.\n- Hardhat or Truffle.\n- Smart contract security knowledge.\n- JavaScript/TypeScript.\n- Web3 ecosystem knowledge.",
+      "about": "CryptoTech Innovations builds decentralized blockchain solutions."
+    }
+  },
+  {
+    "id": "r9s4o5p8-3n07-9o48-q4r9-8v1m2n4o5q7r",
+    "title": "Business Intelligence Analyst",
+    "company": "DataInsights Corp",
+    "location": "Mexico City",
+    "description": "BI analyst for dashboards, reports, and business data analysis.",
+    "data": {
+      "technology": ["powerbi", "tableau", "sql", "excel", "dax"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "DataInsights Corp is seeking a BI Analyst.",
+      "responsibilities": "- Build dashboards.\n- Create reports.\n- Write SQL queries.\n- Use DAX.\n- Work with stakeholders.\n- Analyze trends.\n- Document BI processes.",
+      "requirements": "- Power BI/Tableau experience.\n- Strong SQL skills.\n- DAX knowledge.\n- Excel advanced.\n- Data modeling knowledge.\n- Analytical skills.\n- Communication skills.",
+      "about": "DataInsights Corp helps companies make data-driven decisions."
+    }
+  },
+  {
+    "id": "s0t5p6q9-4o18-0p59-r5s0-9w2n3o5p6r8s",
+    "title": "Android Developer",
+    "company": "MobileTech Studio",
+    "location": "Guadalajara",
+    "description": "Android developer with Kotlin, Jetpack Compose, and MVVM experience.",
+    "data": {
+      "technology": ["kotlin", "android", "jetpack-compose", "mvvm"],
+      "modality": "on-site",
+      "level": "mid"
+    },
+    "content": {
+      "description": "MobileTech Studio is seeking an Android Developer.",
+      "responsibilities": "- Build Android apps.\n- Use Jetpack Compose.\n- Apply MVVM.\n- Integrate APIs.\n- Optimize performance.\n- Test apps.\n- Publish apps.",
+      "requirements": "- Android experience.\n- Kotlin proficiency.\n- Jetpack Compose knowledge.\n- MVVM understanding.\n- Android Jetpack familiarity.\n- Google Play experience.\n- Portfolio preferred.",
+      "about": "MobileTech Studio builds Android applications."
+    }
+  },
+  {
+    "id": "t1u6q7r0-5p29-1q60-s6t1-0x3o4p6q7s9t",
+    "title": "Technical Writer",
+    "company": "DocuTech Solutions",
+    "location": "Remote",
+    "description": "Technical writer for APIs, documentation, and user guides.",
+    "data": {
+      "technology": ["markdown", "git", "api-documentation", "technical-writing"],
+      "modality": "remote",
+      "level": "junior"
+    },
+    "content": {
+      "description": "DocuTech Solutions is seeking a Technical Writer.",
+      "responsibilities": "- Write documentation.\n- Create guides.\n- Collaborate with developers.\n- Create diagrams.\n- Maintain docs in Git.\n- Edit content.\n- Organize documentation.",
+      "requirements": "- Strong writing skills.\n- Technical documentation experience.\n- Markdown knowledge.\n- Git experience.\n- Technical background is a plus.\n- Quick learning ability.\n- Attention to detail.",
+      "about": "DocuTech Solutions provides technical documentation services."
+    }
+  }
+]
