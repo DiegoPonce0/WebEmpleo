@@ -21,7 +21,8 @@ export const createApp = ({ jobModel, userModel, experienceModel, favoriteModel 
   app.use(cookieParser());
   
   app.use(express.json());
-  
+
+
   
   app.use('/jobs', createJobsRouter({jobModel}));
   app.use('/ai', createAIRouter({jobModel}));
