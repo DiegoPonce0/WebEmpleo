@@ -7,7 +7,7 @@ import { ExperienceModel } from './models/postgresql/experience.js'
 import { FavoriteModel } from './models/postgresql/favorite.js';
 
 
-createApp(
+const app = createApp(
     { 
         jobModel: JobModel,
         userModel: UserModel,
@@ -15,3 +15,5 @@ createApp(
         favoriteModel: FavoriteModel
     }
 )
+
+export default app;

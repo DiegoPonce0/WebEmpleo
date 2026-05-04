@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "server-postgre.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "server-postgre.js" }
+  ]
+}

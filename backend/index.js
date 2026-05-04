@@ -36,4 +36,6 @@ export const createApp = ({ jobModel, userModel, experienceModel, favoriteModel 
     });
   }
 
+  return app;
+
 }
