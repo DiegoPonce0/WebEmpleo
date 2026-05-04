@@ -6,7 +6,7 @@ const ACCEPTED_ORIGINS = [
   'http://localhost:3000',
   'http://127.0.0.1:5173',
   'https://web-empleo.vercel.app',
-  'https://web-empleo-backend.vercel.app'
+  'https://dev-jobs-diego.vercel.app'
 ]
 
 export const corsMiddleware = ({ acceptedOrigins = ACCEPTED_ORIGINS } = {}) => {
