@@ -15,7 +15,7 @@ export default function Profile() {
         credentials: 'include'
       })
     } catch (error) {
-      console.error('Error al cerrar sesión:', error)
+      console.error('Error trying to logout:', error)
     } finally {
       logout()
       useFavoriteStore.getState().resetFavorites()
@@ -47,10 +47,10 @@ export default function Profile() {
         </div>
 
         <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>Información Personal</h2>
+          <h2 className={styles.sectionTitle}>Personal Information</h2>
           <div className={styles.infoGrid}>
             <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Nombre completo</span>
+              <span className={styles.infoLabel}>Full Name</span>
               <span className={styles.infoValue}>{user?.name}</span>
             </div>
             <div className={styles.infoItem}>
@@ -58,24 +58,24 @@ export default function Profile() {
               <span className={styles.infoValue}>{user?.email}</span>
             </div>
             <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Teléfono</span>
+              <span className={styles.infoLabel}>Phone</span>
               <span className={styles.infoValue}>{user?.phone}</span>
             </div>
             <div className={styles.infoItem}>
-              <span className={styles.infoLabel}>Ubicación</span>
+              <span className={styles.infoLabel}>Location</span>
               <span className={styles.infoValue}>{user?.location}</span>
             </div>
           </div>
         </div>
 
         <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>Experiencia</h2>
+          <h2 className={styles.sectionTitle}>Experience</h2>
           {user?.experience && user.experience.length > 0 ? (
             user.experience.map((exp, index) => (
               <div key={index} className={styles.experienceItem}>
                 <h3 className={styles.experienceTitle}>{exp.title}</h3>
                 <p className={styles.experienceCompany}>
-                  {exp.company} • {new Date(exp.start_date).toLocaleDateString()} - {new Date(exp.end_date).toLocaleDateString() || 'Presente'}
+                  {exp.company} • {new Date(exp.start_date).toLocaleDateString()} - {new Date(exp.end_date).toLocaleDateString() || 'Current'}
                 </p>
                 <p className={styles.experienceDescription}>
                   {exp.responsibilities}
@@ -83,12 +83,12 @@ export default function Profile() {
               </div>
             ))
           ) : (
-            <p className={styles.noExperience}>No hay experiencia registrada.</p>
+            <p className={styles.noExperience}>There is no experience registered.</p>
           )}
         </div>
 
         <div className={styles.section}>
-          <h2 className={styles.sectionTitle}>Habilidades</h2>
+          <h2 className={styles.sectionTitle}>Skills</h2>
           <div className={styles.skills}>
             {user?.skills?.map((skill, index) => (
               <span key={index} className={styles.skill}>
@@ -100,10 +100,10 @@ export default function Profile() {
 
         <div className={styles.actions}>
           <Link className={styles.editButton} to="/profile/edit">
-            Editar Perfil
+            Edit Profile
           </Link>
           <button className={styles.logoutButton} onClick={handleLogout}>
-            Cerrar Sesión
+            Logout
           </button>
         </div>
       </div>

@@ -113,7 +113,7 @@ export function EditExperience (){
                       name="start_date"
                       type="text"
                       className={styles.input}
-                      defaultValue={exp?.start_date}
+                      defaultValue={exp?.start_date ? new Date(exp.start_date).toLocaleDateString() : ''}
                       placeholder="DD/MM/YYYY"
                     />
                   </div>
@@ -127,7 +127,7 @@ export function EditExperience (){
                       name="end_date"
                       type="text"
                       className={styles.input}
-                      defaultValue={exp?.end_date}
+                      defaultValue={exp?.end_date ? new Date(exp.end_date).toLocaleDateString() : ''}
                       placeholder="DD/MM/YYYY"
                     />
                   </div>
