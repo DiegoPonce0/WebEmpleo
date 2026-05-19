@@ -10,8 +10,8 @@ export class JobModel {
         if (text) {
             const searchTerm = text.toLowerCase()
             filteredJobs = filteredJobs.filter(job =>
-            job.titulo.toLowerCase().includes(searchTerm) ||
-            job.descripcion.toLowerCase().includes(searchTerm)
+            job.title.toLowerCase().includes(searchTerm) ||
+            job.description.toLowerCase().includes(searchTerm)
             );
         }
 
@@ -23,13 +23,13 @@ export class JobModel {
 
         if (location) {
             filteredJobs = filteredJobs.filter(job =>
-            job.data.modalidad.toLowerCase().includes(location.toLowerCase())
+            job.data.modality.toLowerCase().includes(location.toLowerCase())
             );
         }
 
         if (level) {
             filteredJobs = filteredJobs.filter(job =>
-            job.data.nivel.toLowerCase().includes(level.toLowerCase())
+            job.data.level.toLowerCase().includes(level.toLowerCase())
             );
         }
 
@@ -54,40 +54,40 @@ export class JobModel {
     }
 
 
-    static async create({ titulo, empresa, ubicacion, descripcion, data }) {
-        if (!titulo || !descripcion || !data || !empresa || !ubicacion) {
+    static async create({ title, company, location, description, data }) {
+        if (!title || !description || !data || !company || !location) {
             throw new Error('Missing required fields');
         }
         const newJob = {
             id: crypto.randomUUID(),
-            titulo,
-            empresa,
-            ubicacion,
-            descripcion,
+            title,
+            company,
+            location,
+            description,
             data
         };
         jobs.push(newJob);
         return newJob;
     }
 
-    static async update(id, { titulo, empresa, ubicacion, descripcion, data }) {
+    static async update(id, { title, company, location, description, data }) {
         const jobIndex = jobs.findIndex(job => job.id === id);
         if (jobIndex === -1) {
             return null;
         }
         const updatedJob = {
             id,
-            titulo,
-            empresa,
-            ubicacion,
-            descripcion,
+            title,
+            company,
+            location,
+            description,
             data
         };
         jobs[jobIndex] = updatedJob;
         return updatedJob;
     }
 
-    static async patch(id, { titulo, empresa, ubicacion, descripcion, data }) {
+    static async patch(id, { title, company, location, description, data }) {
         const jobIndex = jobs.findIndex(job => job.id === id);
         if (jobIndex === -1) {
             return null;
@@ -95,10 +95,10 @@ export class JobModel {
         const existingJob = jobs[jobIndex];
         const updatedJob = {
             id,
-            titulo: titulo || existingJob.titulo,
-            empresa: empresa || existingJob.empresa,
-            ubicacion: ubicacion || existingJob.ubicacion,
-            descripcion: descripcion || existingJob.descripcion,
+            title: title || existingJob.title,
+            company: company || existingJob.company,
+            location: location || existingJob.location,
+            description: description || existingJob.description,
             data: data || existingJob.data
         };
         jobs[jobIndex] = updatedJob;

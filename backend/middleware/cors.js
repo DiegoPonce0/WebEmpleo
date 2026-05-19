@@ -5,7 +5,6 @@ const ACCEPTED_ORIGINS = [
   'http://localhost:1234',
   'http://localhost:3000',
   'http://127.0.0.1:5173',
-  'https://web-empleo.vercel.app',
   'https://dev-jobs-diego.vercel.app'
 ]
 

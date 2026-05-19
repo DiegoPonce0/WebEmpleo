@@ -147,7 +147,7 @@ export default function CreateJobs() {
             name={modalityId} 
             className={styles.input}
             >
-              <option value="">Select modalidad</option>
+              <option value="">Select modality</option>
               <option value="remote">Remote</option>
               <option value="on site">On site</option>
               <option value="hybrid">Hybrid</option>
