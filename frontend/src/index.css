@@ -73,7 +73,7 @@ select {
 }
 
 
-/* Títulos principales */
+/* Main titles */
 h1 {
   font-size: 1.5rem;
   line-height: 1.2;
@@ -111,7 +111,7 @@ header {
   }
 }
 
-/* Navegación del header a otras páginas */
+/* Header navigation to other pages */
 nav {
   align-items: center;
   gap: 1rem;
@@ -169,7 +169,7 @@ main>section:nth-child(1) {
   }
 }
 
-/* Formulario de Búsqueda */
+/* Search Form */
 .search-form {
   max-width: 42rem;
   width: 100%;
@@ -573,7 +573,7 @@ article {
   
   .loggin-button {
     padding: 0.35rem 0.8rem;   /* menos espacio */
-    font-size: 0.8rem;     /* texto más chico */
+    font-size: 0.8rem;     /* smaller text */
     border-radius: 0.4rem;  /* opcional */
   }
 

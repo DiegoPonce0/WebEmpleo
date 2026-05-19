@@ -36,7 +36,7 @@
   }
 
   .actions > *:last-child {
-    grid-column: span 2; /* botón favorito ocupa todo */
+    grid-column: span 2; /* favorite button takes full width */
   }
 
 
